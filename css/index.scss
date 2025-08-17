@@ -10,10 +10,18 @@
         src: url('./fonts/italiana-v21-latin-regular.woff2') format('woff2');
     }
 
+    @font-face {
+        font-display: swap;
+        font-family: 'Sumana';
+        font-style: normal;
+        font-weight: 400;
+        src: url('./fonts/sumana-v11-latin-regular.woff2') format('woff2');
+    }
+
 }
 
 // ------------------------
-//        RESETS
+//     RESETS + BODY
 // ------------------------
 @media only screen and (min-width: 0px) {
     * {
@@ -28,8 +36,15 @@
     }
 
     body {
-        background-color: #111;
+        background-color: #020408;
         height: 100%;
+
+        background-image: url(../images/heroOriginal.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
     }
 }
 
@@ -37,6 +52,19 @@
 //        VARIABLES
 // ------------------------
 $hover-color: #d36b83;
+$hover-color: #F8AD3E;
+
+@mixin clipBG {
+    transition: 0.3s;
+    $hover-color: #F8AD3E;
+    background: linear-gradient(45deg, #FABC40, #d95423);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s;
+}
+
+
 
 
 // ------------------------
@@ -44,34 +72,14 @@ $hover-color: #d36b83;
 // ------------------------
 @media only screen and (min-width: 0px) {
     header {
-        background-color: #111;
-
-
-
-        .top-nav {
-            max-width: 1500px;
-            width: 90%;
-            margin: 0 auto;
-            padding: 15px 0;
-            text-align: right;
-
-            a {
-                font-size: 14px;
-                color: white;
-
-                &:hover {
-                    color: $hover-color;
-                }
-            }
-        }
+        background-color: #020408;
 
         nav {
-            max-width: 1500px;
+            max-width: 1300px;
             margin: 0 auto;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            border-top: 1px solid rgba(255, 255, 255, 0.25);
 
             .logo {
                 display: flex;
@@ -79,21 +87,29 @@ $hover-color: #d36b83;
                 align-items: center;
                 max-width: 1500px;
 
+                &:hover {
+                    h1 {
+                        @include clipBG;
+                    }
+                }
+
                 h1 {
+                    position: relative;
+                    top: -3.5px;
                     font-weight: 100;
                     font-size: 24px;
-
-                    a {
-                        &:hover {
-                            color: $hover-color;
-                        }
-                    }
+                    padding: 25px 0;
                 }
 
                 svg {
                     padding-right: 10px;
                     width: 80px;
                     height: 80px;
+                }
+
+                img {
+                    width: 80px;
+                    margin-right: 5px;
                 }
 
             }
@@ -110,16 +126,17 @@ $hover-color: #d36b83;
                     align-items: center;
                     position: relative;
                     left: 25px;
+                    gap: 10px;
 
                     a {
-                        padding: 25px;
-                        font-size: 14px;
+                        padding: 20px;
+                        font-size: 15px;
                         font-weight: lighter;
                         letter-spacing: .5px;
+                        text-transform: capitalize;
 
                         &:hover {
-                            color: $hover-color;
-
+                            @include clipBG;
                         }
 
                     }
@@ -138,21 +155,17 @@ $hover-color: #d36b83;
     #hero {
         height: calc(88vh - 136.5px);
         width: 100%;
-        background-image: url(../images/hero.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
         display: flex;
         justify-content: center;
         align-items: center;
+
     }
 
     .hero-inner {
         text-align: center;
 
         h1 {
-            font-size: 80px;
+            font-size: 72px;
             text-transform: uppercase;
             text-shadow: 1px 1px 5px black;
             font-weight: lighter;
@@ -160,8 +173,8 @@ $hover-color: #d36b83;
         }
 
         p {
-            font-size: 16px;
-            letter-spacing: 1.75px;
+            font-size: 20px;
+            letter-spacing: 1.25px;
             text-transform: capitalize;
             text-shadow: 1px 1px 10px black, 1px 1px 5px black;
             display: flex;
@@ -174,7 +187,17 @@ $hover-color: #d36b83;
                 font-size: 24px;
             }
         }
+
+        div {
+            padding-top: 125px;
+
+            p {
+                font-size: 16px;
+            }
+        }
     }
+
+
 }
 
 // ------------------------
@@ -184,11 +207,7 @@ $hover-color: #d36b83;
     #main {
         height: 100vh;
         width: 100%;
-        background-image: url(../images/hero.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+
         display: flex;
         justify-content: center;
         align-items: center;
@@ -201,7 +220,7 @@ $hover-color: #d36b83;
             .main-text {
                 margin: 0 auto;
                 width: 100%;
-                background-color: rgba(0, 0, 0, 0.7);
+                background-color: rgba(0, 0, 0, 0.75);
                 padding: 75px 0;
 
                 h1 {
@@ -216,7 +235,7 @@ $hover-color: #d36b83;
 
                 p {
                     max-width: 900px;
-                    font-weight: lighter;
+                    font-family: 'Sumana';
                     margin: 0 auto;
                     line-height: 1.75;
                     margin-bottom: 25px;
@@ -224,7 +243,6 @@ $hover-color: #d36b83;
                     text-align: center;
                     color: rgb(249, 247, 244);
                     color: #fffcf6;
-                    letter-spacing: .25px;
                 }
             }
         }
@@ -240,11 +258,7 @@ $hover-color: #d36b83;
         height: 85vh;
         width: 100%;
         padding: 25px 0 75px;
-        background-image: url(../images/hero.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+
         display: flex;
         justify-content: center;
         align-items: center;
@@ -283,34 +297,32 @@ $hover-color: #d36b83;
 //  Footer Section
 // ------------------------
 @media only screen and (min-width: 0px) {
-    footer {
-        background-color: rgba(0, 0, 0, 0.7);
-        background-image: url(../images/hero.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
 
     .footer-inner {
         text-align: center;
-        padding: 0 0 25px;
+        padding: 25px 0 15px;
         margin: 0 auto;
         font-size: 13px;
         color: white;
         text-shadow: 0px 0px 3px black;
         line-height: 1.5;
-
-        a {
-            color: transparent;
-        }
+        transition: .3s;
 
         &:hover {
+            transition: .3s;
             color: white;
 
             a {
+                transition: .3s;
                 color: #FDCD6E;
             }
+
+        }
+
+        a {
+            transition: .3s;
+            color: transparent;
+            line-height: 1.5;
 
         }
     }

@@ -6,6 +6,13 @@
     font-weight: 400;
     src: url("./fonts/italiana-v21-latin-regular.woff2") format("woff2");
   }
+  @font-face {
+    font-display: swap;
+    font-family: "Sumana";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/sumana-v11-latin-regular.woff2") format("woff2");
+  }
 }
 @media only screen and (min-width: 0px) {
   * {
@@ -19,35 +26,25 @@
     color: white;
   }
   body {
-    background-color: #111;
+    background-color: #020408;
     height: 100%;
+    background-image: url(../images/heroOriginal.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 }
 @media only screen and (min-width: 0px) {
   header {
-    background-color: #111;
-  }
-  header .top-nav {
-    max-width: 1500px;
-    width: 90%;
-    margin: 0 auto;
-    padding: 15px 0;
-    text-align: right;
-  }
-  header .top-nav a {
-    font-size: 14px;
-    color: white;
-  }
-  header .top-nav a:hover {
-    color: #d36b83;
+    background-color: #020408;
   }
   header nav {
-    max-width: 1500px;
+    max-width: 1300px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-top: 1px solid rgba(255, 255, 255, 0.25);
   }
   header nav .logo {
     display: flex;
@@ -55,17 +52,29 @@
     align-items: center;
     max-width: 1500px;
   }
+  header nav .logo:hover h1 {
+    transition: 0.3s;
+    background: linear-gradient(45deg, #FABC40, #d95423);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s;
+  }
   header nav .logo h1 {
+    position: relative;
+    top: -3.5px;
     font-weight: 100;
     font-size: 24px;
-  }
-  header nav .logo h1 a:hover {
-    color: #d36b83;
+    padding: 25px 0;
   }
   header nav .logo svg {
     padding-right: 10px;
     width: 80px;
     height: 80px;
+  }
+  header nav .logo img {
+    width: 80px;
+    margin-right: 5px;
   }
   header nav .links {
     display: flex;
@@ -79,26 +88,28 @@
     align-items: center;
     position: relative;
     left: 25px;
+    gap: 10px;
   }
   header nav .links ul a {
-    padding: 25px;
-    font-size: 14px;
+    padding: 20px;
+    font-size: 15px;
     font-weight: lighter;
     letter-spacing: 0.5px;
+    text-transform: capitalize;
   }
   header nav .links ul a:hover {
-    color: #d36b83;
+    transition: 0.3s;
+    background: linear-gradient(45deg, #FABC40, #d95423);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s;
   }
 }
 @media only screen and (min-width: 0px) {
   #hero {
     height: calc(88vh - 136.5px);
     width: 100%;
-    background-image: url(../images/hero.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,15 +118,15 @@
     text-align: center;
   }
   .hero-inner h1 {
-    font-size: 80px;
+    font-size: 72px;
     text-transform: uppercase;
     text-shadow: 1px 1px 5px black;
     font-weight: lighter;
     letter-spacing: 1px;
   }
   .hero-inner p {
-    font-size: 16px;
-    letter-spacing: 1.75px;
+    font-size: 20px;
+    letter-spacing: 1.25px;
     text-transform: capitalize;
     text-shadow: 1px 1px 10px black, 1px 1px 5px black;
     display: flex;
@@ -127,16 +138,17 @@
     padding: 0 10px;
     font-size: 24px;
   }
+  .hero-inner div {
+    padding-top: 125px;
+  }
+  .hero-inner div p {
+    font-size: 16px;
+  }
 }
 @media only screen and (min-width: 0px) {
   #main {
     height: 100vh;
     width: 100%;
-    background-image: url(../images/hero.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,7 +161,7 @@
   #main .main-inner .main-text {
     margin: 0 auto;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.75);
     padding: 75px 0;
   }
   #main .main-inner .main-text h1 {
@@ -163,7 +175,7 @@
   }
   #main .main-inner .main-text p {
     max-width: 900px;
-    font-weight: lighter;
+    font-family: "Sumana";
     margin: 0 auto;
     line-height: 1.75;
     margin-bottom: 25px;
@@ -171,7 +183,6 @@
     text-align: center;
     color: rgb(249, 247, 244);
     color: #fffcf6;
-    letter-spacing: 0.25px;
   }
 }
 @media only screen and (min-width: 0px) {
@@ -179,11 +190,6 @@
     height: 85vh;
     width: 100%;
     padding: 25px 0 75px;
-    background-image: url(../images/hero.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -214,30 +220,27 @@
   }
 }
 @media only screen and (min-width: 0px) {
-  footer {
-    background-color: rgba(0, 0, 0, 0.7);
-    background-image: url(../images/hero.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
   .footer-inner {
     text-align: center;
-    padding: 0 0 25px;
+    padding: 25px 0 15px;
     margin: 0 auto;
     font-size: 13px;
     color: white;
     text-shadow: 0px 0px 3px black;
     line-height: 1.5;
-  }
-  .footer-inner a {
-    color: transparent;
+    transition: 0.3s;
   }
   .footer-inner:hover {
+    transition: 0.3s;
     color: white;
   }
   .footer-inner:hover a {
+    transition: 0.3s;
     color: #FDCD6E;
+  }
+  .footer-inner a {
+    transition: 0.3s;
+    color: transparent;
+    line-height: 1.5;
   }
 }/*# sourceMappingURL=index.css.map */
