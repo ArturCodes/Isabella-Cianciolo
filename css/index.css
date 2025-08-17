@@ -1,4 +1,4 @@
-@media only screen and (min-width: 0px) {
+@media only screen and (min-width: 0px) and (min-width: 0px) {
   @font-face {
     font-display: swap;
     font-family: "Italiana";
@@ -14,7 +14,7 @@
     src: url("./fonts/sumana-v11-latin-regular.woff2") format("woff2");
   }
 }
-@media only screen and (min-width: 0px) {
+@media only screen and (min-width: 0px) and (min-width: 0px) {
   * {
     padding: 0;
     margin: 0;
@@ -25,9 +25,13 @@
     font-family: "Italiana";
     color: white;
   }
-  body {
+  html {
     background-color: #020408;
     height: 100%;
+  }
+  body {
+    max-width: 1920px;
+    margin: 0 auto;
     background-image: url(../images/heroOriginal.jpg);
     background-size: cover;
     background-position: center;
@@ -38,9 +42,11 @@
 @media only screen and (min-width: 0px) {
   header {
     background-color: #020408;
+    background-color: rgba(0, 0, 0, 0.8);
   }
   header nav {
-    max-width: 1300px;
+    width: 90%;
+    max-width: 1350px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -50,7 +56,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    max-width: 1500px;
   }
   header nav .logo:hover h1 {
     transition: 0.3s;
@@ -87,7 +92,6 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    left: 25px;
     gap: 10px;
   }
   header nav .links ul a {
@@ -108,7 +112,8 @@
 }
 @media only screen and (min-width: 0px) {
   #hero {
-    height: calc(88vh - 136.5px);
+    height: calc(100vh - 84px);
+    max-height: 1200px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -118,11 +123,13 @@
     text-align: center;
   }
   .hero-inner h1 {
-    font-size: 72px;
+    font-size: 48px;
     text-transform: uppercase;
     text-shadow: 1px 1px 5px black;
     font-weight: lighter;
     letter-spacing: 1px;
+    margin-bottom: 80px;
+    line-height: 1.25;
   }
   .hero-inner p {
     font-size: 20px;
@@ -147,7 +154,6 @@
 }
 @media only screen and (min-width: 0px) {
   #main {
-    height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -155,14 +161,13 @@
   }
   #main .main-inner {
     margin: 0 auto;
-    padding: 100px 0;
     width: 100%;
   }
   #main .main-inner .main-text {
     margin: 0 auto;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.75);
-    padding: 75px 0;
+    padding: 125px 0;
   }
   #main .main-inner .main-text h1 {
     max-width: 900px;
@@ -187,7 +192,6 @@
 }
 @media only screen and (min-width: 0px) {
   #contact {
-    height: 85vh;
     width: 100%;
     padding: 25px 0 75px;
     display: flex;
