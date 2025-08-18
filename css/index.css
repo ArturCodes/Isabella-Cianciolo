@@ -11,7 +11,7 @@
     font-family: "Sumana";
     font-style: normal;
     font-weight: 400;
-    src: url("./fonts/sumana-v11-latin-regular.woff2") format("woff2");
+    src: url("../fonts/sumana-v11-latin-regular.woff2") format("woff2");
   }
 }
 @media only screen and (min-width: 0px) and (min-width: 0px) {
@@ -66,7 +66,7 @@
   header nav .logo:hover h1 {
     transition: 0.3s;
     color: #F8AD3E;
-    background: linear-gradient(45deg, #FABC40, #d95423);
+    background: linear-gradient(45deg, #FABC40, #e25a28);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -78,6 +78,7 @@
     font-weight: 100;
     font-size: 24px;
     padding: 25px 0;
+    font-weight: lighter;
   }
   header nav .logo svg {
     padding-right: 10px;
@@ -111,7 +112,7 @@
   header nav .links ul a:hover {
     transition: 0.3s;
     color: #F8AD3E;
-    background: linear-gradient(45deg, #FABC40, #d95423);
+    background: linear-gradient(45deg, #FABC40, #e25a28);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -183,24 +184,31 @@
     font-weight: lighter;
     font-size: 32px;
     margin-bottom: 25px;
-    color: #FDCD6E;
     text-align: center;
+    color: #FDCD6E;
+    transition: 0.3s;
+    color: #F8AD3E;
+    background: linear-gradient(45deg, #FABC40, #e25a28);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s;
   }
   #main .main-inner .main-text p {
-    max-width: 875px;
+    max-width: 925px;
     font-family: "Sumana";
     margin: 0 auto;
     line-height: 1.75;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     font-size: 16px;
     text-align: center;
-    color: rgb(249, 247, 244);
     color: #fffcf6;
   }
 }
 @media only screen and (min-width: 0px) {
   #contact {
     width: 100%;
+    height: calc(100vh - 158px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -229,7 +237,7 @@
     width: 500px;
     height: 500px;
     z-index: 0;
-    animation: rotateBG 180s forwards infinite;
+    animation: rotateBG 240s forwards infinite;
     filter: drop-shadow(1px 1px 1px #d36b83);
   }
   @keyframes rotateBG {
@@ -288,6 +296,6 @@
   .footer-inner a {
     text-shadow: none;
     transition: 0.3s;
-    color: grey;
+    color: #646464;
   }
 }/*# sourceMappingURL=index.css.map */
