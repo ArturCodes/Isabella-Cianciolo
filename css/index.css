@@ -210,6 +210,11 @@
   }
   nav .links.active {
     display: flex;
+    flex-direction: column;
+    height: 100dvh;
+    width: 50%;
+    min-width: 300px;
+    max-width: 400px;
   }
   nav .hamburger {
     display: flex;
@@ -416,6 +421,16 @@ body {
       transform: rotate(360deg);
     }
   }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
+  .contact-inner::after {
+    width: 450px;
+    height: 450px;
+    right: 180px;
+    bottom: 155px;
+  }
+}
+@media only screen and (min-width: 0px) {
   .contact-inner .contact-body {
     position: relative;
     padding: 20px 25px 30px;
