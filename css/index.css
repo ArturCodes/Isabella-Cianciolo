@@ -211,10 +211,6 @@
   nav .links.active {
     display: flex;
     flex-direction: column;
-    height: 100dvh;
-    width: 50%;
-    min-width: 300px;
-    max-width: 400px;
   }
   nav .hamburger {
     display: flex;
