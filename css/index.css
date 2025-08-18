@@ -100,6 +100,13 @@
     width: 75px;
     margin-right: 5px;
   }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
+  header nav .logo img {
+    width: 65px;
+  }
+}
+@media only screen and (min-width: 0px) {
   header nav .links {
     display: flex;
     justify-content: center;
@@ -173,6 +180,7 @@
   }
   nav .hamburger {
     display: flex;
+    margin-right: 15px;
   }
   nav .hamburger.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
@@ -218,7 +226,7 @@
 }
 @media only screen and (min-width: 0px) {
   #hero {
-    height: calc(100vh - 0px);
+    height: calc(100dvh - 0px);
     max-height: 1200px;
     width: 100%;
     display: flex;
@@ -321,11 +329,18 @@
 @media only screen and (min-width: 0px) {
   #contact {
     width: 100%;
-    height: calc(100vh - 158px);
+    height: calc(100dvh - 158px);
     display: flex;
     justify-content: center;
     align-items: center;
   }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
+  #contact {
+    height: calc(100dvh - 153px);
+  }
+}
+@media only screen and (min-width: 0px) {
   .contact-inner {
     position: relative;
     text-align: center;

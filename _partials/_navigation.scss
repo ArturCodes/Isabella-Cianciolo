@@ -71,6 +71,10 @@ $yellow: #F8AD3E;
                 img {
                     width: 75px;
                     margin-right: 5px;
+
+                    @media only screen and (min-width: 0px) and (max-width: 450px) {
+                        width: 65px;
+                    }
                 }
 
             }
@@ -156,6 +160,7 @@ $yellow: #F8AD3E;
 
             .hamburger {
                 display: flex;
+                margin-right: 15px;
             }
 
             .hamburger.active span:nth-child(1) {
