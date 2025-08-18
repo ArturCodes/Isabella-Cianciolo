@@ -127,7 +127,7 @@
     height: 100vh;
     width: 65vw;
     width: 275px;
-    transition: right 0.5s;
+    transition: right 0.4s;
   }
   header nav .links ul {
     flex-direction: column;
@@ -144,6 +144,13 @@
     font-family: "Sumana";
     width: 100%;
   }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 768px) {
+  header nav .links ul {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 0px) {
   header nav .links ul a {
     padding: 20px;
     font-size: 15px;
@@ -171,7 +178,7 @@
     height: 100vh;
     width: 65vw;
     width: 275px;
-    transition: right 0.5s;
+    transition: right 0.4s;
   }
 }
 @media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 768px) {
