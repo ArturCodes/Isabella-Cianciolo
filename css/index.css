@@ -28,13 +28,16 @@
   html {
     background-color: #020408;
     height: 100%;
+    width: 100%;
+    overflow-x: hidden;
   }
   body {
+    width: 100%;
+    overflow-x: hidden;
     max-width: 1920px;
     margin: 0 auto;
     background-image: url(../images/heroOriginal.jpg);
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
@@ -179,7 +182,7 @@
     text-align: center;
   }
   #main .main-inner .main-text p {
-    max-width: 900px;
+    max-width: 875px;
     font-family: "Sumana";
     margin: 0 auto;
     line-height: 1.75;
@@ -193,13 +196,11 @@
 @media only screen and (min-width: 0px) {
   #contact {
     width: 100%;
-    padding: 50px 0;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .contact-inner {
-    background-color: rgba(2, 4, 8, 0.5);
     position: relative;
     text-align: center;
     margin: 0 auto;
@@ -216,18 +217,20 @@
     align-items: center;
   }
   .contact-inner h1 {
+    text-transform: uppercase;
     font-weight: lighter;
-    font-size: 44px;
-    margin-bottom: 10px;
+    font-size: 32px;
+    margin-bottom: 25apx;
     color: white;
-    text-shadow: 0px 0px 1px black, 0px 0px 3px black, 0px 0px 5px black, 0px 0px 15px black;
+    text-shadow: 0px 0px 1px black, 0px 0px 2px black, 0px 0px 3px black, 0px 0px 4px black, 0px 0px 6px black;
   }
   .contact-inner p {
     letter-spacing: 0.125px;
     font-weight: lighter;
     line-height: 1.5;
     font-size: 16px;
-    text-shadow: 0px 0px 1px black, 0px 0px 3px black, 0px 0px 5px black, 0px 0px 15px black;
+    margin-bottom: 2px;
+    text-shadow: 0px 0px 1px black, 0px 0px 2px black, 0px 0px 3px black, 0px 0px 4px black, 0px 0px 6px black;
   }
 }
 @media only screen and (min-width: 0px) {
