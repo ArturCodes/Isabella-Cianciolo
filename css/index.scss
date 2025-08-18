@@ -89,13 +89,17 @@ $yellow: #F8AD3E;
         .main-inner {
             margin: 0 auto;
             width: 100%;
+            background-color: rgba(0, 0, 0, 0.75);
+            padding: 125px 10px 125px 10px;
+
+            @media only screen and (min-width: 0px) and (max-width: 450px) {
+                padding: 50px 0;
+            }
 
             .main-text {
                 text-align: center;
+                width: 90%;
                 margin: 0 auto;
-                width: 100%;
-                background-color: rgba(0, 0, 0, 0.75);
-                padding: 125px 10px 125px 10px;
 
                 h1 {
                     width: 100%;
@@ -119,6 +123,15 @@ $yellow: #F8AD3E;
                     font-size: 16px;
                     text-align: center;
                     color: #fffcf6;
+
+                }
+
+                @media only screen and (min-width: 0px) and (max-width: 450px) {
+
+                    h1,
+                    p {
+                        text-align: left;
+                    }
                 }
             }
         }
