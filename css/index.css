@@ -225,9 +225,9 @@
     background-repeat: no-repeat;
     position: absolute;
     right: 150px;
-    bottom: 0px;
+    bottom: 125px;
     width: 500px;
-    height: 100%;
+    height: 500px;
     z-index: 0;
     animation: rotateBG 180s forwards infinite;
     filter: drop-shadow(1px 1px 1px #d36b83);
@@ -286,8 +286,8 @@
     color: #FDCD6E;
   }
   .footer-inner a {
+    text-shadow: none;
     transition: 0.3s;
-    color: transparent;
-    line-height: 1.5;
+    color: grey;
   }
 }/*# sourceMappingURL=index.css.map */
