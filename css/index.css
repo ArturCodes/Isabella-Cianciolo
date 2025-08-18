@@ -101,6 +101,7 @@
     align-items: center;
     position: relative;
     gap: 10px;
+    font-family: "Sumana";
   }
   header nav .links ul a {
     padding: 20px;
