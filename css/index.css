@@ -272,7 +272,7 @@
   .footer-inner a {
     text-shadow: none;
     transition: 0.3s;
-    color: #646464;
+    color: white;
   }
 }
 body {
@@ -283,7 +283,7 @@ body {
 }
 @media only screen and (min-width: 0px) and (max-width: 450px) {
   body {
-    background-image: url(../images/hero-mobile.webp);
+    background-image: url(../images/hero-mobile.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -320,6 +320,14 @@ body {
     letter-spacing: 1px;
     margin-bottom: 80px;
   }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
+  .hero-inner h1 {
+    padding: 0 25px;
+    font-size: 36px;
+  }
+}
+@media only screen and (min-width: 0px) {
   .hero-inner p {
     font-size: 20px;
     letter-spacing: 1.25px;
@@ -495,30 +503,5 @@ body {
     margin: 0 auto;
     padding: 5px 7.5px;
     text-shadow: 1px 1px 1px black, 1px 1px 5px black, 1px 1px 7px black, 1px 1px 10px black;
-  }
-}
-@media only screen and (min-width: 0px) {
-  .footer-inner {
-    text-align: center;
-    padding: 25px 0 15px;
-    margin: 0 auto;
-    font-size: 13px;
-    color: white;
-    text-shadow: 0px 0px 3px black;
-    line-height: 1.5;
-    transition: 0.3s;
-  }
-  .footer-inner:hover {
-    transition: 0.3s;
-    color: white;
-  }
-  .footer-inner:hover a {
-    transition: 0.3s;
-    color: #FDCD6E;
-  }
-  .footer-inner a {
-    text-shadow: none;
-    transition: 0.3s;
-    color: #646464;
   }
 }/*# sourceMappingURL=index.css.map */
