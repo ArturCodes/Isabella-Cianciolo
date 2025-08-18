@@ -27,6 +27,10 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+    @media only screen and (min-width: 0px) and (max-width: 450px) {
+        background-image: url(../images/hero-mobile.webp);
+    }
 }
 
 
@@ -41,6 +45,10 @@ body {
         justify-content: center;
         align-items: center;
 
+        @media only screen and (min-width: 0px) and (max-width: 450px) {
+            height: 90svh;
+        }
+
     }
 
     .hero-inner {
@@ -54,7 +62,6 @@ body {
             font-weight: lighter;
             letter-spacing: 1px;
             margin-bottom: 80px;
-            line-height: 1.25;
         }
 
         p {

@@ -102,11 +102,15 @@ $yellow: #F8AD3E;
                     width: 65vw;
                     width: 275px;
                     transition: right 0.5s;
+
+                    ul {
+                        flex-direction: column;
+                    }
                 }
 
                 ul {
                     display: flex;
-                    flex-direction: column;
+                    flex-direction: row;
                     justify-content: center;
                     align-items: center;
                     position: relative;
