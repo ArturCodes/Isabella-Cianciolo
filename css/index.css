@@ -293,7 +293,7 @@ body {
     background-image: url(../images/hero-mobile.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
   }
 }
 
@@ -304,6 +304,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
+  #hero {
+    background-image: url(../images/hero-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
   }
 }
 @media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
@@ -427,6 +435,14 @@ body {
 }
 @media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
   #contact {
+    background-image: url(../images/hero-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
+  #contact {
     height: calc(100dvh - 153px);
   }
 }
@@ -478,13 +494,14 @@ body {
 @media only screen and (min-width: 0px) {
   .contact-inner .contact-body {
     position: relative;
-    padding: 20px 25px 30px;
+    padding: 25px 25px 35px;
     z-index: 1;
     transition: 0.2s;
   }
   .contact-inner .contact-body:hover {
     transition: 0.2s;
     background: rgba(0, 0, 0, 0.75);
+    border-radius: 100vw;
   }
   .contact-inner .contact-body h1 {
     position: relative;
@@ -498,7 +515,6 @@ body {
   .contact-inner .contact-body p {
     position: relative;
     font-size: 16px;
-    line-height: 1.25;
     text-transform: capitalize;
     display: flex;
     flex-direction: row;
