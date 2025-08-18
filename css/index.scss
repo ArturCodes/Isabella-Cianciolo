@@ -54,7 +54,6 @@
             margin: 0 auto;
             background-image: url(../images/heroOriginal.jpg);
             background-size: cover;
-            // background-position: center;
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
@@ -85,8 +84,11 @@
 // ------------------------
 @media only screen and (min-width: 0px) {
     header {
+        position: fixed;
+        width: 100%;
         background-color: #020408;
-        background-color: rgba(0, 0, 0, 0.80);
+        background-color: rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 30px #B0576E;
 
         nav {
             width: 90%;
@@ -122,7 +124,7 @@
                 }
 
                 img {
-                    width: 80px;
+                    width: 75px;
                     margin-right: 5px;
                 }
 

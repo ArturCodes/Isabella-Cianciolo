@@ -44,8 +44,11 @@
 }
 @media only screen and (min-width: 0px) {
   header {
+    position: fixed;
+    width: 100%;
     background-color: #020408;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 30px #B0576E;
   }
   header nav {
     width: 90%;
@@ -81,7 +84,7 @@
     height: 80px;
   }
   header nav .logo img {
-    width: 80px;
+    width: 75px;
     margin-right: 5px;
   }
   header nav .links {
