@@ -30,6 +30,9 @@ body {
 
     @media only screen and (min-width: 0px) and (max-width: 450px) {
         background-image: url(../images/hero-mobile.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
 }
 
