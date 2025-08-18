@@ -29,7 +29,7 @@ body {
     background-attachment: fixed;
 
     @media only screen and (min-width: 0px) and (max-width: 450px) {
-        background-image: url(../images/hero-mobile.jpg);
+        background-image: none;
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: scroll;
@@ -124,6 +124,7 @@ body {
             margin: 0 auto;
             width: 100%;
             background-color: rgba(0, 0, 0, 0.75);
+            background: #110a07;
             padding: 125px 10px 125px 10px;
 
             @media only screen and (min-width: 0px) and (max-width: 450px) {
@@ -192,7 +193,7 @@ body {
         }
 
         @media only screen and (min-width: 0px) and (max-width: 450px) {
-            height: calc(100dvh - 153px);
+            height: calc(100dvh - 138px);
         }
     }
 
