@@ -16,13 +16,8 @@
 }
 @media only screen and (min-width: 0px) and (min-width: 0px) {
   * {
-    padding: 0;
-    margin: 0;
     list-style: none;
     text-decoration: none;
-    font-family: "Quicksand";
-    font-family: "Playfair Display";
-    font-family: "Italiana";
     color: white;
   }
   html {
@@ -52,12 +47,20 @@
   }
   header nav {
     width: 90%;
-    max-width: 1350px;
+    max-width: 1000px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
+  header nav {
+    width: 96%;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 0px) {
   header nav .logo {
     display: flex;
     flex-direction: row;
@@ -74,12 +77,18 @@
   }
   header nav .logo h1 {
     position: relative;
-    top: -3.5px;
     font-weight: 100;
     font-size: 24px;
     padding: 25px 0;
     font-weight: lighter;
   }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
+  header nav .logo h1 {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 0px) {
   header nav .logo svg {
     padding-right: 10px;
     width: 80px;
@@ -118,6 +127,91 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: 0.3s;
+  }
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  .hamburger span {
+    display: block;
+    height: 3px;
+    background: linear-gradient(45deg, #FABC40, #e25a28);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  nav .links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: rgba(0, 0, 0, 0.95);
+    width: 200px;
+    flex-direction: column;
+    display: none;
+  }
+  nav .links ul {
+    flex-direction: column;
+    gap: 0;
+  }
+  nav .links ul li a {
+    display: block;
+    width: 100%;
+    padding: 15px;
+  }
+  nav .links.active {
+    display: flex;
+  }
+  nav .hamburger {
+    display: flex;
+  }
+  nav .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  nav .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  nav .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}
+@media only screen and (min-width: 0px) {
+  .footer-inner {
+    text-align: center;
+    padding: 25px 0 15px;
+    margin: 0 auto;
+    font-size: 13px;
+    color: white;
+    text-shadow: 0px 0px 3px black;
+    line-height: 1.5;
+    transition: 0.3s;
+  }
+  .footer-inner:hover {
+    transition: 0.3s;
+    color: white;
+  }
+  .footer-inner:hover a {
+    transition: 0.3s;
+    color: #FDCD6E;
+    transition: 0.3s;
+    color: #F8AD3E;
+    background: linear-gradient(45deg, #FABC40, #e25a28);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s;
+  }
+  .footer-inner a {
+    text-shadow: none;
+    transition: 0.3s;
+    color: #646464;
   }
 }
 @media only screen and (min-width: 0px) {
@@ -174,12 +268,14 @@
     width: 100%;
   }
   #main .main-inner .main-text {
+    text-align: center;
     margin: 0 auto;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.75);
-    padding: 125px 0;
+    padding: 125px 10px 125px 10px;
   }
   #main .main-inner .main-text h1 {
+    width: 100%;
     max-width: 900px;
     margin: 0 auto;
     font-weight: lighter;
@@ -196,6 +292,7 @@
     transition: 0.3s;
   }
   #main .main-inner .main-text p {
+    width: 100%;
     max-width: 925px;
     font-family: "Sumana";
     margin: 0 auto;

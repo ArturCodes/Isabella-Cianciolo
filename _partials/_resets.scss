@@ -1,0 +1,65 @@
+// ------------------------
+//        VARIABLES
+// ------------------------
+$pink: #d36b83;
+$yellow: #F8AD3E;
+
+// ------------------------
+//  Globals
+// ------------------------
+@media only screen and (min-width: 0px) {
+
+    // ------------------------
+    //        FONTS
+    // ------------------------
+    @media only screen and (min-width: 0px) {
+        @font-face {
+            font-display: swap;
+            font-family: 'Italiana';
+            font-style: normal;
+            font-weight: 400;
+            src: url('./fonts/italiana-v21-latin-regular.woff2') format('woff2');
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: 'Sumana';
+            font-style: normal;
+            font-weight: 400;
+            src: url('../fonts/sumana-v11-latin-regular.woff2') format('woff2');
+        }
+
+    }
+
+    // ------------------------
+    //  RESETS + HTML + BODY
+    // ------------------------
+    @media only screen and (min-width: 0px) {
+        * {
+            list-style: none;
+            text-decoration: none;
+            color: white;
+        }
+
+        html {
+            background-color: #020408;
+            height: 100%;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
+            width: 100%;
+            overflow-x: hidden;
+            max-width: 1920px;
+            margin: 0 auto;
+            background-image: url(../images/heroOriginal.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    }
+
+
+
+}
