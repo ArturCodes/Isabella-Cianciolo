@@ -21,6 +21,15 @@ $yellow: #F8AD3E;
     transition: 0.3s;
 }
 
+body {
+
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
 // ------------------------
 //  Hero Section
 // ------------------------
@@ -174,13 +183,13 @@ $yellow: #F8AD3E;
             background-position: center;
             background-repeat: no-repeat;
             position: absolute;
-            right: 150px;
+            right: 135px;
             bottom: 125px;
             width: 500px;
             height: 500px;
             z-index: 0;
             animation: rotateBG 240s forwards infinite;
-            filter: drop-shadow(1px 1px 1px $pink);
+            filter: drop-shadow(1px 1px 3px rgb(101, 3, 83));
 
             @keyframes rotateBG {
                 0% {
@@ -195,6 +204,7 @@ $yellow: #F8AD3E;
         }
 
         h1 {
+            position: relative;
             font-size: 36px;
             text-transform: capitalize;
             text-shadow: 1px 1px 5px black;
@@ -205,9 +215,10 @@ $yellow: #F8AD3E;
             padding-bottom: 5px;
         }
 
+
         p {
+            position: relative;
             font-size: 16px;
-            letter-spacing: 1.125px;
             line-height: 1.25;
             text-transform: capitalize;
             display: flex;
@@ -215,13 +226,15 @@ $yellow: #F8AD3E;
             justify-content: center;
             align-items: center;
             z-index: 1;
-
             text-shadow: 1px 1px 1px black, 1px 1px 5px black;
+            width: fit-content;
+            margin: 0 auto;
+            padding: 5px 7.5px;
 
-
-            a {
-                padding-top: 15px;
+            &:hover {
+                background: rgba(0, 0, 0, .75);
             }
+
         }
 
     }

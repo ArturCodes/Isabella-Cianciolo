@@ -14,7 +14,6 @@ $yellow: #F8AD3E;
     transition: 0.3s;
 }
 
-
 // ------------------------
 //  Header + Navigation
 // ------------------------
@@ -24,15 +23,18 @@ $yellow: #F8AD3E;
         width: 100%;
         background-color: #020408;
         background-color: rgba(0, 0, 0, 0.95);
-        box-shadow: 0px 0px 30px #B0576E;
+        box-shadow: 0px 0px 5px #B0576E, 0px 0px 25px #B0576E;
 
         nav {
-            width: 90%;
+            width: 96%;
             max-width: 1000px;
             margin: 0 auto;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            align-items: center;
+            z-index: 2;
+
 
             @media only screen and (min-width: 0px) and (max-width: 450px) {
                 width: 96%;
@@ -53,7 +55,7 @@ $yellow: #F8AD3E;
                 h1 {
                     position: relative;
                     font-weight: 100;
-                    font-size: 24px;
+                    font-size: 22px;
                     padding: 25px 0;
                     font-weight: lighter;
 
@@ -84,6 +86,13 @@ $yellow: #F8AD3E;
                 justify-content: center;
                 align-items: center;
 
+                @media only screen and (min-width: 0px) and (max-width: 768px) {
+                    display: none;
+                    max-width: 60%;
+                    min-width: 250px;
+                    right: -400px;
+                }
+
                 ul {
                     display: flex;
                     flex-direction: row;
@@ -92,18 +101,44 @@ $yellow: #F8AD3E;
                     position: relative;
                     gap: 10px;
                     font-family: 'Sumana';
+                    width: 100%;
 
                     a {
                         padding: 20px;
                         font-size: 15px;
                         font-weight: lighter;
                         letter-spacing: .5px;
-                        text-transform: capitalize;
+                        text-transform: lowercase;
 
                         &:hover {
                             @include clipBG;
                         }
 
+                    }
+                }
+            }
+
+            .links.active {
+                display: flex;
+                flex-direction: column;
+                height: 100dvh;
+                max-width: 60%;
+                min-width: 250px;
+                z-index: 0;
+                background-color: rgba(0, 0, 0, 0.9);
+
+                @media only screen and (min-width: 0px) and (max-width: 768px) {
+
+                    ul {
+                        display: block;
+                        display: flex;
+                        flex-direction: column;
+                        padding-bottom: 150px;
+
+                        li a {
+                            padding: 0;
+                            margin: 0;
+                        }
                     }
                 }
             }
