@@ -468,7 +468,6 @@ body {
     text-align: center;
     margin: 0 auto;
     height: 250px;
-    padding: 250px;
     border-radius: 100%;
     display: flex;
     flex-direction: column;
@@ -484,6 +483,14 @@ body {
     margin-bottom: 40px;
     max-width: 550px;
   }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
+  .cta-inner h1 {
+    padding: 0 25px;
+    font-size: 36px;
+  }
+}
+@media only screen and (min-width: 0px) {
   .cta-inner .contact-body {
     position: relative;
     padding: 25px 25px 35px;
