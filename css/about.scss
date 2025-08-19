@@ -55,9 +55,6 @@ body {
     .my-practice {
         margin-top: 175px;
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
 
         .my-practice-inner {
             margin-top: 100px;
@@ -101,6 +98,38 @@ body {
                     margin-bottom: 0;
                 }
             }
+
+            .button {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 25px;
+
+                a {
+                    font-size: 22px;
+                    letter-spacing: 1.25px;
+                    text-transform: capitalize;
+                    text-shadow: 1px 1px 5px black, 1px 1px 10px black;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 20px 25px;
+                    transition: 0.3s;
+
+                    background-color: rgba(4, 4, 4, 0.5);
+                    border: 2px solid;
+                    border-image: $gradient 1;
+
+
+                    &:hover {
+                        transition: 0.3s;
+                        background-color: rgba(4, 4, 4, 0.7);
+                    }
+                }
+            }
         }
 
         @media only screen and (min-width: 0px) and (max-width: 450px) {
@@ -115,7 +144,11 @@ body {
                 }
             }
         }
+
+
+
     }
+
 }
 
 // ------------------------
