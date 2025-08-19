@@ -225,8 +225,13 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
                 }
             }
 
+
             div {
                 margin-bottom: 35px;
+
+                p {
+                    margin-bottom: 0;
+                }
             }
 
         }

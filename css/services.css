@@ -512,6 +512,9 @@
   .services .item div {
     margin-bottom: 35px;
   }
+  .services .item div p {
+    margin-bottom: 0;
+  }
 }
 @media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 1200px) {
   .services {
