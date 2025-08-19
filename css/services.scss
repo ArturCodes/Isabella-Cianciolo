@@ -54,7 +54,7 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
             background-color: rgba(0, 0, 0, 0.75);
             max-width: 800px;
             margin: 0 auto;
-            padding: 50px clamp(25px, 5vw, 75px);
+            padding: 50px clamp(25px, 5vw, 75px) 75px;
 
             h1 {
                 width: 100%;
@@ -151,7 +151,7 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
         height: 15vh;
         background-image: url(../images/hero.jpg);
         background-size: cover;
-        background-position: bottom;
+        background-position: center;
 
         @media only screen and (min-width: 0px) and (max-width: 450px) {
             display: block;

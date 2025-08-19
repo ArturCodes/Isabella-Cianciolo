@@ -125,6 +125,10 @@ body {
                         background-color: rgba(4, 4, 4, 0.7);
                     }
                 }
+
+                @media only screen and (min-width: 0px) and (max-width: 450px) {
+                    justify-content: flex-start;
+                }
             }
         }
 
@@ -159,6 +163,18 @@ body {
         background-image: url(../images/hero.jpg);
         background-size: cover;
         background-position: center;
+
+        @media only screen and (min-width: 0px) and (max-width: 450px) {
+            display: block;
+        }
+    }
+
+    .buffer2 {
+        display: none;
+        height: 15vh;
+        background-image: url(../images/hero.jpg);
+        background-size: cover;
+        background-position: bottom;
 
         @media only screen and (min-width: 0px) and (max-width: 450px) {
             display: block;
@@ -261,6 +277,10 @@ body {
                         transition: 0.3s;
                         background-color: rgba(4, 4, 4, 0.7);
                     }
+                }
+
+                @media only screen and (min-width: 0px) and (max-width: 450px) {
+                    justify-content: flex-start;
                 }
             }
 

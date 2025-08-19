@@ -417,6 +417,11 @@ body {
   }
 }
 @media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
+  .my-practice .my-practice-inner .button {
+    justify-content: flex-start;
+  }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
   .my-practice {
     margin: 35px 0;
   }
@@ -440,6 +445,20 @@ body {
 }
 @media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
   .buffer {
+    display: block;
+  }
+}
+@media only screen and (min-width: 0px) {
+  .buffer2 {
+    display: none;
+    height: 15vh;
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-position: bottom;
+  }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
+  .buffer2 {
     display: block;
   }
 }
@@ -529,6 +548,11 @@ body {
   .about-me .about-me-inner .button a:hover {
     transition: 0.3s;
     background-color: rgba(4, 4, 4, 0.7);
+  }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
+  .about-me .about-me-inner .button {
+    justify-content: flex-start;
   }
 }
 @media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
