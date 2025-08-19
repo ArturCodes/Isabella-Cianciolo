@@ -149,7 +149,7 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
 
     .buffer {
         display: none;
-        height: 15vh;
+        height: 10vh;
         background-image: url(../images/hero.jpg);
         background-size: cover;
         background-position: center;
@@ -165,6 +165,18 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
         background-image: url(../images/hero.jpg);
         background-size: cover;
         background-position: bottom;
+
+        @media only screen and (min-width: 0px) and (max-width: 450px) {
+            display: block;
+        }
+    }
+
+    .buffer3 {
+        display: none;
+        height: 5vh;
+        background-image: url(../images/hero.jpg);
+        background-size: cover;
+        background-position: center;
 
         @media only screen and (min-width: 0px) and (max-width: 450px) {
             display: block;
@@ -224,12 +236,19 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
                 }
             }
 
-
             div {
                 margin-bottom: 35px;
 
                 p {
                     margin-bottom: 0;
+                }
+
+            }
+
+            .button {
+                @media only screen and (min-width: 0px) and (max-width: 450px) {
+                    margin-bottom: 0;
+                    padding-bottom: 35px;
                 }
             }
 
@@ -245,6 +264,9 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
                 margin: 0 auto;
                 padding: 50px clamp(25px, 5vw, 75px) 75px;
 
+                @media only screen and (min-width: 0px) and (max-width: 450px) {
+                    padding-bottom: 40px;
+                }
             }
         }
 
