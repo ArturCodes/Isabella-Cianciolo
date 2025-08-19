@@ -12,41 +12,33 @@ $pink: #d36b83;
 $yellow: #F8AD3E;
 $gradient: linear-gradient(45deg, #FABC40, #e25a28);
 
-@mixin clipBG {
-    transition: 0.3s;
-    color: #F8AD3E;
-    background: linear-gradient(45deg, #FABC40, #e25a28);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: 0.3s;
-}
+@media only screen and (min-width: 0px) {
 
-body {
-    background-image: url(../images/hero.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
-    @media only screen and (min-width: 0px) and (max-width: 450px) {
-        background-image: none;
+    body {
+        background-image: url(../images/hero.jpg);
         background-size: cover;
         background-repeat: no-repeat;
-        background-attachment: scroll;
+        background-attachment: fixed;
+
+        @media only screen and (min-width: 0px) and (max-width: 450px) {
+            background-image: none;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+        }
+    }
+
+    .hero {
+        display: none;
+        height: 20vh;
+        background-image: url(../images/hero.jpg);
+        background-size: cover;
+
+        @media only screen and (min-width: 0px) and (max-width: 450px) {
+            display: block;
+        }
     }
 }
-
-.hero {
-    display: none;
-    height: 20vh;
-    background-image: url(../images/hero.jpg);
-    background-size: cover;
-
-    @media only screen and (min-width: 0px) and (max-width: 450px) {
-        display: block;
-    }
-}
-
 
 // ------------------------
 //  My Practice Section
@@ -57,12 +49,12 @@ body {
         width: 100%;
 
         .my-practice-inner {
+            width: 90%;
             margin-top: 100px;
             background-color: rgba(0, 0, 0, 0.75);
             max-width: 800px;
             margin: 0 auto;
-            padding: 50px 75px;
-            width: 90%;
+            padding: 50px clamp(25px, 5vw, 75px);
 
             h1 {
                 width: 100%;
@@ -72,8 +64,6 @@ body {
                 font-size: 32px;
                 margin-bottom: 25px;
                 text-align: center;
-                color: #FDCD6E;
-                transition: 0.3s;
                 color: #F8AD3E;
                 background: linear-gradient(45deg, #FABC40, #e25a28);
                 background-clip: text;
@@ -149,4 +139,61 @@ body {
 
     }
 
+}
+
+// ------------------------
+//  Buffer Section
+// ------------------------
+@media only screen and (min-width: 0px) {
+
+    .buffer {
+        display: none;
+        height: 15vh;
+        background-image: url(../images/hero.jpg);
+        background-size: cover;
+        background-position: bottom;
+
+        @media only screen and (min-width: 0px) and (max-width: 450px) {
+            display: block;
+        }
+    }
+}
+
+// ------------------------
+//  Services Section
+// ------------------------
+@media only screen and (min-width: 0px) {
+    .services {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        margin-top: 50px;
+
+        .item {
+            padding: 25px 35px;
+            background-color: rgba(0, 0, 0, 0.75);
+            width: 33%;
+
+            h1 {
+                width: 100%;
+                max-width: 900px;
+                margin: 0 auto;
+                font-weight: lighter;
+                font-size: 32px;
+                margin-bottom: 25px;
+                text-align: center;
+                color: #FDCD6E;
+                transition: 0.3s;
+                color: #F8AD3E;
+                background: linear-gradient(45deg, #FABC40, #e25a28);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                transition: 0.3s;
+                text-transform: uppercase;
+            }
+        }
+    }
 }

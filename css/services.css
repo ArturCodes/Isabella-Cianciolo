@@ -318,13 +318,15 @@
     color: white;
   }
 }
-body {
-  background-image: url(../images/hero.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+@media only screen and (min-width: 0px) {
+  body {
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
 }
-@media only screen and (min-width: 0px) and (max-width: 450px) {
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
   body {
     background-image: none;
     background-size: cover;
@@ -332,31 +334,31 @@ body {
     background-attachment: scroll;
   }
 }
-
-.hero {
-  display: none;
-  height: 20vh;
-  background-image: url(../images/hero.jpg);
-  background-size: cover;
+@media only screen and (min-width: 0px) {
+  .hero {
+    display: none;
+    height: 20vh;
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+  }
 }
-@media only screen and (min-width: 0px) and (max-width: 450px) {
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
   .hero {
     display: block;
   }
 }
-
 @media only screen and (min-width: 0px) {
   .my-practice {
     margin-top: 175px;
     width: 100%;
   }
   .my-practice .my-practice-inner {
+    width: 90%;
     margin-top: 100px;
     background-color: rgba(0, 0, 0, 0.75);
     max-width: 800px;
     margin: 0 auto;
-    padding: 50px 75px;
-    width: 90%;
+    padding: 50px clamp(25px, 5vw, 75px);
   }
   .my-practice .my-practice-inner h1 {
     width: 100%;
@@ -366,8 +368,6 @@ body {
     font-size: 32px;
     margin-bottom: 25px;
     text-align: center;
-    color: #FDCD6E;
-    transition: 0.3s;
     color: #F8AD3E;
     background: linear-gradient(45deg, #FABC40, #e25a28);
     background-clip: text;
@@ -429,5 +429,52 @@ body {
   .my-practice .my-practice-inner h1,
   .my-practice .my-practice-inner p {
     text-align: left;
+  }
+}
+@media only screen and (min-width: 0px) {
+  .buffer {
+    display: none;
+    height: 15vh;
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-position: bottom;
+  }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
+  .buffer {
+    display: block;
+  }
+}
+@media only screen and (min-width: 0px) {
+  .services {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 50px;
+  }
+  .services .item {
+    padding: 25px 35px;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 33%;
+  }
+  .services .item h1 {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    font-weight: lighter;
+    font-size: 32px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #FDCD6E;
+    transition: 0.3s;
+    color: #F8AD3E;
+    background: linear-gradient(45deg, #FABC40, #e25a28);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s;
+    text-transform: uppercase;
   }
 }/*# sourceMappingURL=services.css.map */
