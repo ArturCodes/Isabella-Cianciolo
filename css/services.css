@@ -456,7 +456,7 @@
     height: 15vh;
     background-image: url(../images/hero.jpg);
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
   }
 }
 @media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
@@ -467,7 +467,7 @@
 @media only screen and (min-width: 0px) {
   .buffer3 {
     display: none;
-    height: 5vh;
+    height: 3vh;
     background-image: url(../images/hero.jpg);
     background-size: cover;
     background-position: center;
@@ -554,6 +554,8 @@
 }
 @media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 1200px) and (min-width: 0px) and (max-width: 450px) {
   .services .item {
+    padding-left: 0;
+    padding-right: 0;
     padding-bottom: 40px;
   }
 }
@@ -677,6 +679,67 @@
   }
   .tutoring .tutoring-inner h1,
   .tutoring .tutoring-inner p {
+    text-align: left;
+  }
+  .tutoring .tutoring-inner .button {
+    justify-content: flex-start;
+    padding-bottom: 40px;
+  }
+}
+@media only screen and (min-width: 0px) {
+  .payments {
+    margin-top: 25px;
+    width: 100%;
+    margin-bottom: 75px;
+  }
+  .payments .payments-inner {
+    width: 90%;
+    margin-top: 100px;
+    background-color: rgba(0, 0, 0, 0.75);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px clamp(25px, 5vw, 75px) 75px;
+  }
+  .payments .payments-inner h1 {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    font-weight: lighter;
+    font-size: 32px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #F8AD3E;
+    background: linear-gradient(45deg, #FABC40, #e25a28);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s;
+    text-transform: uppercase;
+  }
+  .payments .payments-inner p {
+    width: 100%;
+    max-width: 925px;
+    font-family: "Sumana";
+    margin: 0 auto;
+    line-height: 1.75;
+    margin-bottom: 15px;
+    font-size: 16px;
+    text-align: center;
+    color: #fffcf6;
+  }
+  .payments .payments-inner p:last-child {
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
+  .payments {
+    margin: 35px 0;
+  }
+  .payments .payments-inner {
+    padding: 0px 0;
+  }
+  .payments .payments-inner h1,
+  .payments .payments-inner p {
     text-align: left;
   }
 }/*# sourceMappingURL=services.css.map */
