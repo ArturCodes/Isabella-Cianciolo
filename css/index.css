@@ -154,6 +154,7 @@
     width: 65vw;
     width: 275px;
     transition: right 0.4s;
+    padding-bottom: 100px;
   }
   header nav .links ul {
     flex-direction: column;
@@ -359,6 +360,8 @@ body {
     text-align: center;
   }
   .hero-inner h1 {
+    width: 90%;
+    margin: 0 auto;
     font-size: 48px;
     text-transform: uppercase;
     text-shadow: 1px 1px 5px black;

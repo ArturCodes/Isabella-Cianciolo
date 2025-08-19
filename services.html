@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/services.css">
+    <title>Services</title>
+</head>
+
+<body>
+    <div class="scroll-wrapper">
+
+        <header>
+
+            <nav>
+                <div id="overlay" onclick="closeMobile()" class="" aria-hidden="true"></div>
+                <a href="./index.html" class="logo">
+                    <div class="img">
+                        <img src="./images/logo.png" alt="logo">
+                    </div>
+                    <h1> Astrology For Mindfulness </h1>
+                </a>
+
+                <button class="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="Services.html">Services</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+
+            <script>
+                const hamburger = document.querySelector(".hamburger");
+                const links = document.querySelector(".links");
+                const overlay = document.getElementById("overlay");
+
+                // Function to open/close mobile menu
+                hamburger.addEventListener("click", () => {
+                    const isActive = hamburger.classList.toggle("active");
+                    links.classList.toggle("active");
+                    overlay.classList.toggle("active", isActive); // show overlay only if menu is active
+                });
+
+                // Function to close mobile menu
+                function closeMobile() {
+                    hamburger.classList.remove("active");
+                    links.classList.remove("active");
+                    overlay.classList.remove("active");
+                }
+
+                // Optional: close menu if clicking outside on mobile
+                document.addEventListener("click", (e) => {
+                    if (
+                        !hamburger.contains(e.target) &&
+                        !links.contains(e.target) &&
+                        window.innerWidth <= 768
+                    ) {
+                        closeMobile();
+                    }
+                });
+            </script>
+
+
+        </header>
+
+        <main>
+            <div class="hero"></div>
+            <div class="my-practice">
+                <div class="my-practice-inner">
+                    <h1>CONSULTATIONS</h1>
+                    <p>Astrology is meant to be an ongoing conversation. The chart is ever evolving, as are you and I.
+                        These dynamics continue to create new potentials that can be seen in the chart. Co-creating with
+                        the universe is a beautiful, lifetime commitment. Each consultation will unravel new dynamics
+                        that may not have been present, or relevant, during previous conversations. The intention is to
+                        bring a sense of grounding and mindfulness to the present moment, in order to meet yourself
+                        where you are and empower you to actively participate in the course of your own life, rather
+                        than waiting for something to happen.
+                    </p>
+
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            <div class="footer-inner">
+                Copyright © 2025 - Isabella Cianciolo - All Rights Reserved
+                <br><a href="https://artshawebdesign.com/"> ARTSHA Web Design & Development </a>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>

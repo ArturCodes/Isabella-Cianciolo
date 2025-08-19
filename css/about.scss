@@ -61,8 +61,7 @@ body {
             background-color: rgba(0, 0, 0, 0.75);
             max-width: 800px;
             margin: 0 auto;
-            padding: 50px 75px;
-            width: 90%;
+            padding: 50px clamp(25px, 5vw, 75px);
 
             h1 {
                 width: 100%;
@@ -137,6 +136,7 @@ body {
 
             .my-practice-inner {
                 padding: 0px 0;
+                width: 90%;
 
                 h1,
                 p {
@@ -174,7 +174,7 @@ body {
 // ------------------------
 @media only screen and (min-width: 0px) {
     .about-me {
-        margin: 100px 0 35px;
+        margin: 100px 0 75px;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -185,7 +185,7 @@ body {
             background-color: rgba(0, 0, 0, 0.75);
             max-width: 800px;
             margin: 0 auto;
-            padding: 50px 75px;
+            padding: 50px clamp(25px, 5vw, 75px);
             width: 90%;
 
             .img {
@@ -237,8 +237,41 @@ body {
                 }
             }
 
+            .button {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 25px;
+
+                a {
+                    font-size: 22px;
+                    letter-spacing: 1.25px;
+                    text-transform: capitalize;
+                    text-shadow: 1px 1px 5px black, 1px 1px 10px black;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 20px 25px;
+                    transition: 0.3s;
+
+                    background-color: rgba(4, 4, 4, 0.5);
+                    border: 2px solid;
+                    border-image: $gradient 1;
+
+
+                    &:hover {
+                        transition: 0.3s;
+                        background-color: rgba(4, 4, 4, 0.7);
+                    }
+                }
+            }
+
             @media only screen and (min-width: 0px) and (max-width: 450px) {
                 padding: 0px 0;
+                width: 90%;
 
                 h1,
                 p {

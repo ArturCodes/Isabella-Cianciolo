@@ -154,6 +154,7 @@
     width: 65vw;
     width: 275px;
     transition: right 0.4s;
+    padding-bottom: 100px;
   }
   header nav .links ul {
     flex-direction: column;
@@ -354,8 +355,7 @@ body {
     background-color: rgba(0, 0, 0, 0.75);
     max-width: 800px;
     margin: 0 auto;
-    padding: 50px 75px;
-    width: 90%;
+    padding: 50px clamp(25px, 5vw, 75px);
   }
   .my-practice .my-practice-inner h1 {
     width: 100%;
@@ -424,6 +424,7 @@ body {
   }
   .my-practice .my-practice-inner {
     padding: 0px 0;
+    width: 90%;
   }
   .my-practice .my-practice-inner h1,
   .my-practice .my-practice-inner p {
@@ -446,7 +447,7 @@ body {
 }
 @media only screen and (min-width: 0px) {
   .about-me {
-    margin: 100px 0 35px;
+    margin: 100px 0 75px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -457,7 +458,7 @@ body {
     background-color: rgba(0, 0, 0, 0.75);
     max-width: 800px;
     margin: 0 auto;
-    padding: 50px 75px;
+    padding: 50px clamp(25px, 5vw, 75px);
     width: 90%;
   }
   .about-me .about-me-inner .img {
@@ -505,10 +506,39 @@ body {
   .about-me .about-me-inner p:last-child {
     margin-bottom: 0;
   }
+  .about-me .about-me-inner .button {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+  .about-me .about-me-inner .button a {
+    font-size: 22px;
+    letter-spacing: 1.25px;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 5px black, 1px 1px 10px black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 25px;
+    transition: 0.3s;
+    background-color: rgba(4, 4, 4, 0.5);
+    border: 2px solid;
+    -o-border-image: linear-gradient(45deg, #FABC40, #e25a28) 1;
+       border-image: linear-gradient(45deg, #FABC40, #e25a28) 1;
+  }
+  .about-me .about-me-inner .button a:hover {
+    transition: 0.3s;
+    background-color: rgba(4, 4, 4, 0.7);
+  }
 }
 @media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
   .about-me .about-me-inner {
     padding: 0px 0;
+    width: 90%;
   }
   .about-me .about-me-inner h1,
   .about-me .about-me-inner p {
