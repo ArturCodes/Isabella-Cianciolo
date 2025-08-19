@@ -426,7 +426,7 @@
 }
 @media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
   .my-practice {
-    margin: 35px 0;
+    margin: 35px 0 40px;
   }
   .my-practice .my-practice-inner {
     padding: 0px 0;
