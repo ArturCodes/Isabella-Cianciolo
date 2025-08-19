@@ -16,6 +16,7 @@
 }
 @media only screen and (min-width: 0px) {
   * {
+    box-sizing: border-box;
     list-style: none;
     text-decoration: none;
     color: white;
@@ -355,6 +356,7 @@
     width: 100%;
   }
   .my-practice .my-practice-inner {
+    min-height: 355px;
     width: 90%;
     margin-top: 100px;
     background-color: rgba(0, 0, 0, 0.75);
