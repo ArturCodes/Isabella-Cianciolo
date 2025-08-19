@@ -329,4 +329,50 @@ body {
     background-repeat: no-repeat;
     background-attachment: scroll;
   }
+}
+
+@media only screen and (min-width: 0px) {
+  .my-practice {
+    margin: 150px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .my-practice .my-practice-inner {
+    margin-top: 100px;
+    background-color: rgba(0, 0, 0, 0.75);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 75px;
+  }
+  .my-practice .my-practice-inner h1 {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    font-weight: lighter;
+    font-size: 32px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #FDCD6E;
+    transition: 0.3s;
+    color: #F8AD3E;
+    background: linear-gradient(45deg, #FABC40, #e25a28);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s;
+    text-transform: uppercase;
+  }
+  .my-practice .my-practice-inner p {
+    width: 100%;
+    max-width: 925px;
+    font-family: "Sumana";
+    margin: 0 auto;
+    line-height: 1.75;
+    margin-bottom: 35px;
+    font-size: 16px;
+    text-align: center;
+    color: #fffcf6;
+  }
 }/*# sourceMappingURL=about.css.map */
