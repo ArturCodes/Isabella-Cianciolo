@@ -513,10 +513,6 @@
     width: 90%;
     margin: 0 auto;
     padding: 0;
-    padding: 55px 0 70px;
-    border-bottom: 2px solid;
-    -o-border-image: linear-gradient(45deg, #FABC40, #e25a28) 1;
-       border-image: linear-gradient(45deg, #FABC40, #e25a28) 1;
   }
 }
 @media only screen and (min-width: 0px) {
@@ -552,5 +548,6 @@
 @media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
   .services .button {
     justify-content: flex-start;
+    padding-bottom: 50px;
   }
 }/*# sourceMappingURL=services.css.map */
