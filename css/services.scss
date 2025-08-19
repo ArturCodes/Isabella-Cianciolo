@@ -183,6 +183,10 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
         gap: 10px;
         margin-top: 50px;
 
+        @media only screen and (min-width: 0px) and (max-width: 450px) {
+            margin-top: 0;
+        }
+
         .item {
             padding: 25px 35px;
             background-color: rgba(0, 0, 0, 0.75);
@@ -223,14 +227,15 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
 
         }
 
-        @media only screen and (min-width: 0px) and (max-width: 800px) {
+        @media only screen and (min-width: 0px) and (max-width: 1200px) {
             display: flex;
             flex-direction: column;
 
             .item {
+                max-width: 800px;
                 width: 90%;
                 margin: 0 auto;
-                padding: 0;
+                padding: 50px clamp(25px, 5vw, 75px) 75px;
 
             }
         }
