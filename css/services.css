@@ -446,6 +446,20 @@
   }
 }
 @media only screen and (min-width: 0px) {
+  .buffer2 {
+    display: none;
+    height: 15vh;
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-position: bottom;
+  }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
+  .buffer2 {
+    display: block;
+  }
+}
+@media only screen and (min-width: 0px) {
   .services {
     max-width: 1200px;
     margin: 0 auto;
@@ -488,5 +502,55 @@
   }
   .services .item p:last-child {
     margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 800px) {
+  .services {
+    display: flex;
+    flex-direction: column;
+  }
+  .services .item {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    padding: 55px 0 70px;
+    border-bottom: 2px solid;
+    -o-border-image: linear-gradient(45deg, #FABC40, #e25a28) 1;
+       border-image: linear-gradient(45deg, #FABC40, #e25a28) 1;
+  }
+}
+@media only screen and (min-width: 0px) {
+  .services .button {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+  .services .button a {
+    font-size: 22px;
+    letter-spacing: 1.25px;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 5px black, 1px 1px 10px black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 25px;
+    transition: 0.3s;
+    background-color: rgba(4, 4, 4, 0.5);
+    border: 2px solid;
+    -o-border-image: linear-gradient(45deg, #FABC40, #e25a28) 1;
+       border-image: linear-gradient(45deg, #FABC40, #e25a28) 1;
+  }
+  .services .button a:hover {
+    transition: 0.3s;
+    background-color: rgba(4, 4, 4, 0.7);
+  }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
+  .services .button {
+    justify-content: flex-start;
   }
 }/*# sourceMappingURL=services.css.map */
