@@ -499,8 +499,8 @@
   .services .item p {
     width: 100%;
     max-width: 925px;
+    max-width: 550px;
     font-family: "Sumana";
-    margin: 0 auto;
     line-height: 1.75;
     margin-bottom: 35px;
     font-size: 16px;
