@@ -4,37 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/about.css">
+    <title>About</title>
 </head>
 
 <body>
+    <div class="scroll-wrapper">
 
-    <header>
-        <nav>
-            <a href="./index.html" class="logo">
-                <div class="img">
-                    <img src="./images/logo.png" alt="logo">
+        <header>
+            <nav>
+                <a href="./index.html" class="logo">
+                    <div class="img">
+                        <img src="./images/logo.png" alt="logo">
+                    </div>
+                    <h1> Astrology For Mindfulness </h1>
+                </a>
+
+                <button class="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+
+                <div class="links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="Services.html">Services</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
                 </div>
-                <h1> Astrology For Mindfulness </h1>
-            </a>
 
-            <div class="links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="Services.html">Services</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                </ul>
+            </nav>
+
+            <script>const hamburger = document.querySelector(".hamburger");
+                const links = document.querySelector(".links");
+
+                hamburger.addEventListener("click", () => {
+                    hamburger.classList.toggle("active");
+                    links.classList.toggle("active");
+                });
+            </script>
+
+        </header>
+
+        <main>
+
+        </main>
+        <footer>
+            <div class="footer-inner">
+                Copyright © 2025 - Isabella Cianciolo - All Rights Reserved
+                <br><a href="https://artshawebdesign.com/"> ARTSHA Web Design & Development </a>
             </div>
-
-        </nav>
-
-
-    </header>
-    <main>
-
-    </main>
-    <footer></footer>
+        </footer>
+    </div>
 </body>
 
 </html>

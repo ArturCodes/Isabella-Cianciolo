@@ -1,0 +1,38 @@
+// ---------------------------
+//      Partials Imports
+// ---------------------------
+@use '../_partials/resets';
+@use '../_partials/navigation';
+@use '../_partials/footer';
+
+// ------------------------
+//        VARIABLES
+// ------------------------
+$pink: #d36b83;
+$yellow: #F8AD3E;
+$gradient: linear-gradient(45deg, #FABC40, #e25a28);
+
+@mixin clipBG {
+    transition: 0.3s;
+    color: #F8AD3E;
+    background: linear-gradient(45deg, #FABC40, #e25a28);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s;
+}
+
+body {
+
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    @media only screen and (min-width: 0px) and (max-width: 450px) {
+        background-image: none;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+}
