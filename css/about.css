@@ -396,6 +396,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 25px;
+    padding: 15px 0;
   }
   .my-practice .my-practice-inner .button a {
     font-size: 22px;
@@ -534,6 +535,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 25px;
+    padding: 15px 0;
   }
   .about-me .about-me-inner .button a {
     font-size: 22px;
