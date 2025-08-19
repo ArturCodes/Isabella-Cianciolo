@@ -407,14 +407,14 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px 25px;
-    transition: 0.3s;
+    transition: 0.2s;
     background-color: rgba(4, 4, 4, 0.5);
     border: 2px solid;
     -o-border-image: linear-gradient(45deg, #FABC40, #e25a28) 1;
        border-image: linear-gradient(45deg, #FABC40, #e25a28) 1;
   }
   .my-practice .my-practice-inner .button a:hover {
-    transition: 0.3s;
+    transition: 0.2s;
     background-color: rgba(4, 4, 4, 0.7);
     box-shadow: 0px 0px 35px #d36b83;
   }
@@ -545,14 +545,14 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px 25px;
-    transition: 0.3s;
+    transition: 0.2s;
     background-color: rgba(4, 4, 4, 0.5);
     border: 2px solid;
     -o-border-image: linear-gradient(45deg, #FABC40, #e25a28) 1;
        border-image: linear-gradient(45deg, #FABC40, #e25a28) 1;
   }
   .about-me .about-me-inner .button a:hover {
-    transition: 0.3s;
+    transition: 0.2s;
     background-color: rgba(4, 4, 4, 0.7);
     box-shadow: 0px 0px 35px #d36b83;
   }
