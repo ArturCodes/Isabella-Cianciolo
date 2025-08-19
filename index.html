@@ -14,6 +14,8 @@
 <body>
     <div class="scroll-wrapper">
 
+        <div id="overlay" onclick="closeMobile()" class="" aria-hidden="true"></div>
+
         <header>
             <nav>
                 <a href="./index.html" class="logo">
@@ -41,14 +43,37 @@
 
             </nav>
 
-            <script>const hamburger = document.querySelector(".hamburger");
+            <script>
+                const hamburger = document.querySelector(".hamburger");
                 const links = document.querySelector(".links");
+                const overlay = document.getElementById("overlay");
 
+                // Function to open/close mobile menu
                 hamburger.addEventListener("click", () => {
-                    hamburger.classList.toggle("active");
+                    const isActive = hamburger.classList.toggle("active");
                     links.classList.toggle("active");
+                    overlay.classList.toggle("active", isActive); // show overlay only if menu is active
+                });
+
+                // Function to close mobile menu
+                function closeMobile() {
+                    hamburger.classList.remove("active");
+                    links.classList.remove("active");
+                    overlay.classList.remove("active");
+                }
+
+                // Optional: close menu if clicking outside on mobile
+                document.addEventListener("click", (e) => {
+                    if (
+                        !hamburger.contains(e.target) &&
+                        !links.contains(e.target) &&
+                        window.innerWidth <= 768
+                    ) {
+                        closeMobile();
+                    }
                 });
             </script>
+
 
         </header>
 
