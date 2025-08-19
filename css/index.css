@@ -35,11 +35,12 @@
   html,
   body {
     height: 100%;
-    margin: 0;
+    margin: 0 auto;
     overflow-x: hidden;
   }
   .scroll-wrapper {
     height: 100dvh;
+    margin: 0 auto;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     overscroll-behavior: contain;
@@ -65,6 +66,7 @@
   header {
     position: fixed;
     width: 100%;
+    max-width: 1920px;
     background-color: #020408;
     background-color: rgba(0, 0, 0, 0.95);
     box-shadow: 0px 0px 5px #B0576E, 0px 0px 25px #B0576E;

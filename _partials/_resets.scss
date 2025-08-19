@@ -52,12 +52,13 @@ $yellow: #F8AD3E;
     html,
     body {
         height: 100%;
-        margin: 0;
+        margin: 0 auto;
         overflow-x: hidden;
     }
 
     .scroll-wrapper {
         height: 100dvh;
+        margin: 0 auto;
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
         overscroll-behavior: contain;
