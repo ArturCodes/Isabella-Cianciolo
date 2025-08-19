@@ -441,7 +441,7 @@ body {
   }
 }
 @media only screen and (min-width: 0px) {
-  #contact {
+  #cta {
     width: 100%;
     height: calc(100dvh - 148px);
     display: flex;
@@ -450,7 +450,7 @@ body {
   }
 }
 @media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
-  #contact {
+  #cta {
     background-image: url(../images/hero-mobile.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -458,12 +458,12 @@ body {
   }
 }
 @media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
-  #contact {
+  #cta {
     height: calc(100dvh - 138px);
   }
 }
 @media only screen and (min-width: 0px) {
-  .contact-inner {
+  .cta-inner {
     position: relative;
     text-align: center;
     margin: 0 auto;
@@ -475,51 +475,26 @@ body {
     justify-content: center;
     align-items: center;
   }
-  .contact-inner::after {
-    content: "";
-    background-image: url(../images/symbol.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-    right: 160px;
-    bottom: 125px;
-    width: 500px;
-    height: 500px;
-    z-index: 0;
-    animation: rotateBG 240s forwards infinite;
-    filter: drop-shadow(1px 1px 3px rgb(101, 3, 83));
+  .cta-inner h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px black;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    max-width: 550px;
   }
-  @keyframes rotateBG {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-}
-@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
-  .contact-inner::after {
-    width: 450px;
-    height: 450px;
-    right: 180px;
-    bottom: 155px;
-    background-image: none;
-  }
-}
-@media only screen and (min-width: 0px) {
-  .contact-inner .contact-body {
+  .cta-inner .contact-body {
     position: relative;
     padding: 25px 25px 35px;
     z-index: 1;
     transition: 0.2s;
   }
-  .contact-inner .contact-body:hover {
+  .cta-inner .contact-body:hover {
     transition: 0.2s;
     background: rgba(0, 0, 0, 0.75);
   }
-  .contact-inner .contact-body h1 {
+  .cta-inner .contact-body h1 {
     position: relative;
     font-size: 36px;
     text-transform: capitalize;
@@ -528,7 +503,7 @@ body {
     z-index: 1;
     text-shadow: 1px 1px 1px black, 1px 1px 5px black, 1px 1px 10px black, 1px 1px 15px black, 1px 1px 25px black;
   }
-  .contact-inner .contact-body p {
+  .cta-inner .contact-body p {
     position: relative;
     font-size: 16px;
     display: flex;

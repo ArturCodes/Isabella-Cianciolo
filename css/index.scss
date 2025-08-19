@@ -175,10 +175,10 @@ body {
 }
 
 // ------------------------
-//  Contact Section
+//  CTA Section
 // ------------------------
 @media only screen and (min-width: 0px) {
-    #contact {
+    #cta {
         width: 100%;
         height: calc(100dvh - 148px);
         display: flex;
@@ -197,7 +197,7 @@ body {
         }
     }
 
-    .contact-inner {
+    .cta-inner {
         position: relative;
         text-align: center;
         margin: 0 auto;
@@ -209,40 +209,48 @@ body {
         justify-content: center;
         align-items: center;
 
-        &::after {
-            content: "";
-            background-image: url(../images/symbol.png);
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
-            position: absolute;
-            right: 160px;
-            bottom: 125px;
-            width: 500px;
-            height: 500px;
-            z-index: 0;
-            animation: rotateBG 240s forwards infinite;
-            filter: drop-shadow(1px 1px 3px rgb(101, 3, 83));
-
-            @keyframes rotateBG {
-                0% {
-                    transform: rotate(0deg);
-                }
-
-                100% {
-                    transform: rotate(360deg);
-                }
-            }
-
-            @media only screen and (min-width: 0px) and (max-width: 450px) {
-                width: 450px;
-                height: 450px;
-                right: 180px;
-                bottom: 155px;
-                background-image: none;
-            }
-
+        h1 {
+            font-size: 48px;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 5px black;
+            font-weight: lighter;
+            letter-spacing: 1px;
+            margin-bottom: 40px;
+            max-width: 550px;
         }
+
+        // &::after {
+        //     content: "";
+        //     background-image: url(../images/symbol.png);
+        //     background-size: contain;
+        //     background-position: center;
+        //     background-repeat: no-repeat;
+        //     position: absolute;
+        //     width: 500px;
+        //     height: 500px;
+        //     z-index: 0;
+        //     animation: rotateBG 240s forwards infinite;
+        //     filter: drop-shadow(1px 1px 3px rgb(101, 3, 83));
+
+        //     @keyframes rotateBG {
+        //         0% {
+        //             transform: rotate(0deg);
+        //         }
+
+        //         100% {
+        //             transform: rotate(360deg);
+        //         }
+        //     }
+
+        //     @media only screen and (min-width: 0px) and (max-width: 450px) {
+        //         width: 450px;
+        //         height: 450px;
+        //         right: 180px;
+        //         bottom: 155px;
+        //         background-image: none;
+        //     }
+
+        // }
 
         .contact-body {
             position: relative;
