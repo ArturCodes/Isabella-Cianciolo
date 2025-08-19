@@ -41,14 +41,27 @@ $yellow: #F8AD3E;
         background-color: #020408;
         height: 100%;
         width: 100%;
-        overflow-x: hidden;
     }
 
     body {
         width: 100%;
-        overflow-x: hidden;
         max-width: 1920px;
         margin: 0 auto;
     }
+
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .scroll-wrapper {
+        height: 100vh;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior: contain;
+    }
+
 
 }
