@@ -182,7 +182,7 @@
     font-size: 15px;
     font-weight: lighter;
     letter-spacing: 0.5px;
-    text-transform: lowercase;
+    text-transform: capitalize;
   }
   header nav .links ul a:hover {
     transition: 0.3s;
