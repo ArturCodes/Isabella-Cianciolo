@@ -39,7 +39,7 @@
     overflow-x: hidden;
   }
   .scroll-wrapper {
-    height: 100vh;
+    height: 100dvh;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     overscroll-behavior: contain;
