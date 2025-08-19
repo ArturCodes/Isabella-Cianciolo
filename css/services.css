@@ -466,7 +466,6 @@
     font-weight: lighter;
     font-size: 32px;
     margin-bottom: 25px;
-    text-align: center;
     color: #FDCD6E;
     transition: 0.3s;
     color: #F8AD3E;
@@ -476,5 +475,18 @@
     -webkit-text-fill-color: transparent;
     transition: 0.3s;
     text-transform: uppercase;
+  }
+  .services .item p {
+    width: 100%;
+    max-width: 925px;
+    font-family: "Sumana";
+    margin: 0 auto;
+    line-height: 1.75;
+    margin-bottom: 35px;
+    font-size: 16px;
+    color: #fffcf6;
+  }
+  .services .item p:last-child {
+    margin-bottom: 0;
   }
 }/*# sourceMappingURL=services.css.map */
