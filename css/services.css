@@ -461,6 +461,7 @@
 }
 @media only screen and (min-width: 0px) {
   .services {
+    max-width: 1400px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -475,7 +476,7 @@
 }
 @media only screen and (min-width: 0px) {
   .services .item {
-    padding: 25px 35px;
+    padding: 25px 35px 35px;
     background-color: rgba(0, 0, 0, 0.75);
     width: 33%;
   }
