@@ -509,6 +509,9 @@
   .services .item p:last-child {
     margin-bottom: 0;
   }
+  .services .item div {
+    margin-bottom: 35px;
+  }
 }
 @media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 1200px) {
   .services {
