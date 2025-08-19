@@ -429,6 +429,9 @@ body {
     padding: 0px 0;
     width: 90%;
   }
+  .my-practice .my-practice-inner h1 {
+    font-size: 30px;
+  }
   .my-practice .my-practice-inner h1,
   .my-practice .my-practice-inner p {
     text-align: left;
