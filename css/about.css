@@ -333,21 +333,20 @@ body {
 }
 
 .hero {
+  display: none;
   height: 20vh;
   background-image: url(../images/hero.jpg);
   background-size: cover;
 }
-
-.buffer {
-  height: 20vh;
-  background-image: url(../images/hero.jpg);
-  background-size: cover;
-  background-position: bottom;
+@media only screen and (min-width: 0px) and (max-width: 450px) {
+  .hero {
+    display: block;
+  }
 }
 
 @media only screen and (min-width: 0px) {
   .my-practice {
-    margin: 150px 0;
+    margin-top: 175px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -396,7 +395,7 @@ body {
 }
 @media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
   .my-practice {
-    margin: 25px 0 25px;
+    margin: 35px 0;
   }
   .my-practice .my-practice-inner {
     padding: 0px 0;
@@ -407,8 +406,22 @@ body {
   }
 }
 @media only screen and (min-width: 0px) {
+  .buffer {
+    display: none;
+    height: 15vh;
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
+  .buffer {
+    display: block;
+  }
+}
+@media only screen and (min-width: 0px) {
   .about-me {
-    margin: 100px 0 150px;
+    margin: 100px 0 35px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -420,6 +433,20 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 50px 75px;
+    width: 90%;
+  }
+  .about-me .about-me-inner .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-me .about-me-inner .img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-bottom: 35px;
+    max-width: 350px;
   }
   .about-me .about-me-inner h1 {
     width: 100%;
@@ -455,6 +482,18 @@ body {
   }
 }
 @media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
+  .about-me .about-me-inner {
+    padding: 0px 0;
+  }
+  .about-me .about-me-inner h1,
+  .about-me .about-me-inner p {
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
+  .about-me {
+    margin: 35px 0;
+  }
   .about-me .about-me-inner {
     padding: 0px 0;
   }
