@@ -259,7 +259,7 @@
     opacity: 0;
   }
   nav .hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(6.75px, -5px);
+    transform: rotate(-45deg) translate(7.25px, -5px);
   }
 }
 @media only screen and (min-width: 0px) {
