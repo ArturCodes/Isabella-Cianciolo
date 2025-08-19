@@ -349,4 +349,106 @@
   .hero {
     display: block;
   }
+}
+@media only screen and (min-width: 0px) {
+  .contact {
+    margin-top: 175px;
+    width: 100%;
+  }
+  .contact .contact-inner {
+    margin-top: 100px;
+    background-color: rgba(0, 0, 0, 0.75);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px clamp(25px, 5vw, 75px);
+  }
+  .contact .contact-inner h1 {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    font-weight: lighter;
+    font-size: 32px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #F8AD3E;
+    background: linear-gradient(45deg, #FABC40, #e25a28);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s;
+    text-transform: uppercase;
+  }
+  .contact .contact-inner p {
+    width: 100%;
+    max-width: 400px;
+    font-family: "Sumana";
+    margin: 0 auto;
+    line-height: 1.75;
+    margin-bottom: 35px;
+    font-size: 16px;
+    text-align: center;
+    color: #fffcf6;
+  }
+  .contact .contact-inner p:last-child {
+    margin-bottom: 0;
+  }
+  .contact .contact-inner p a {
+    color: #F8AD3E;
+    background: linear-gradient(45deg, #FABC40, #e25a28);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s;
+  }
+  .contact .contact-inner .button {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 15px 0;
+  }
+  .contact .contact-inner .button a {
+    font-size: 22px;
+    letter-spacing: 1.25px;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 5px black, 1px 1px 10px black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 25px;
+    transition: 0.2s;
+    background-color: rgba(4, 4, 4, 0.5);
+    border: 2px solid;
+    -o-border-image: linear-gradient(45deg, #FABC40, #e25a28) 1;
+       border-image: linear-gradient(45deg, #FABC40, #e25a28) 1;
+  }
+  .contact .contact-inner .button a:hover {
+    transition: 0.2s;
+    background-color: rgba(4, 4, 4, 0.7);
+    box-shadow: 0px 0px 35px #d36b83;
+  }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
+  .contact .contact-inner .button {
+    justify-content: flex-start;
+  }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
+  .contact {
+    margin: 35px 0;
+  }
+  .contact .contact-inner {
+    padding: 0px 0;
+    width: 90%;
+  }
+  .contact .contact-inner h1 {
+    font-size: 30px;
+  }
+  .contact .contact-inner h1,
+  .contact .contact-inner p {
+    text-align: left;
+  }
 }/*# sourceMappingURL=contact.css.map */
