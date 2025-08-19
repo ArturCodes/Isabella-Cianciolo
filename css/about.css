@@ -389,6 +389,9 @@ body {
     text-align: center;
     color: #fffcf6;
   }
+  .my-practice .my-practice-inner p:last-child {
+    margin-bottom: 0;
+  }
 }
 @media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
   .my-practice {
@@ -445,6 +448,9 @@ body {
     font-size: 16px;
     text-align: center;
     color: #fffcf6;
+  }
+  .about-me .about-me-inner p:last-child {
+    margin-bottom: 0;
   }
 }
 @media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {

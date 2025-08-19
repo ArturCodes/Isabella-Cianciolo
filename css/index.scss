@@ -160,6 +160,10 @@ body {
                     text-align: center;
                     color: #fffcf6;
 
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
                 }
 
                 @media only screen and (min-width: 0px) and (max-width: 450px) {
