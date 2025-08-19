@@ -207,6 +207,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-bottom: 100px;
 
         h1 {
             font-size: 48px;
@@ -214,8 +215,8 @@ body {
             text-shadow: 1px 1px 5px black;
             font-weight: lighter;
             letter-spacing: 1px;
-            margin-bottom: 40px;
-            max-width: 550px;
+            margin-bottom: 50px;
+            max-width: 800px;
 
             @media only screen and (min-width: 0px) and (max-width: 450px) {
                 padding: 0 25px;
@@ -223,72 +224,31 @@ body {
             }
         }
 
-        // &::after {
-        //     content: "";
-        //     background-image: url(../images/symbol.png);
-        //     background-size: contain;
-        //     background-position: center;
-        //     background-repeat: no-repeat;
-        //     position: absolute;
-        //     width: 500px;
-        //     height: 500px;
-        //     z-index: 0;
-        //     animation: rotateBG 240s forwards infinite;
-        //     filter: drop-shadow(1px 1px 3px rgb(101, 3, 83));
+        .button {
+            display: flex;
+            flex-direction: row;
+            gap: 25px;
 
-        //     @keyframes rotateBG {
-        //         0% {
-        //             transform: rotate(0deg);
-        //         }
-
-        //         100% {
-        //             transform: rotate(360deg);
-        //         }
-        //     }
-
-        //     @media only screen and (min-width: 0px) and (max-width: 450px) {
-        //         width: 450px;
-        //         height: 450px;
-        //         right: 180px;
-        //         bottom: 155px;
-        //         background-image: none;
-        //     }
-
-        // }
-
-        .contact-body {
-            position: relative;
-            padding: 25px 25px 35px;
-            z-index: 1;
-            transition: 0.2s;
-
-            &:hover {
-                transition: 0.2s;
-                background: rgba(0, 0, 0, .75);
-            }
-
-            h1 {
-                position: relative;
-                font-size: 36px;
+            a {
+                font-size: 22px;
+                letter-spacing: 1.25px;
                 text-transform: capitalize;
-                font-weight: lighter;
-                line-height: 1.5;
-                z-index: 1;
-                text-shadow: 1px 1px 1px black, 1px 1px 5px black, 1px 1px 10px black, 1px 1px 15px black, 1px 1px 25px black;
-            }
-
-            p {
-                position: relative;
-                font-size: 16px;
+                text-shadow: 1px 1px 5px black, 1px 1px 10px black;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
-                z-index: 1;
-                width: fit-content;
-                margin: 0 auto;
-                padding: 5px 7.5px;
-                text-shadow: 1px 1px 1px black, 1px 1px 5px black, 1px 1px 10px black, 1px 1px 15px black, 1px 1px 25px black;
+                border: 1px solid white;
+                background-color: rgba(4, 4, 4, 0.4);
+                padding: 15px 25px;
+                border-radius: 100vw;
+
+                &:hover {
+                    text-shadow: none;
+                    color: #F8AD3E;
+                    background-color: rgba(4, 4, 4, 0.4);
+
+                }
             }
         }
 
