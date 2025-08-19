@@ -417,6 +417,7 @@
   .my-practice .my-practice-inner .button a:hover {
     transition: 0.3s;
     background-color: rgba(4, 4, 4, 0.7);
+    box-shadow: 0px 0px 35px #d36b83;
   }
 }
 @media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
@@ -557,6 +558,7 @@
   .services .button a:hover {
     transition: 0.3s;
     background-color: rgba(4, 4, 4, 0.7);
+    box-shadow: 0px 0px 35px #d36b83;
   }
 }
 @media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {

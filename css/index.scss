@@ -252,10 +252,9 @@ body {
                 border: 2px solid;
                 border-image: $gradient 1;
 
-
                 &:hover {
                     transition: 0.3s;
-                    background-color: rgba(4, 4, 4, 0.7);
+                    background-color: rgba(4, 4, 4, 0.75);
                 }
             }
         }
