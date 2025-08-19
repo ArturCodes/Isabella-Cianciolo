@@ -507,12 +507,15 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: 2px #F8AD3E solid;
-    border-radius: 12.5px;
-    background-color: rgba(4, 4, 4, 0.5);
     padding: 20px 25px;
+    transition: 0.3s;
+    background-color: rgba(4, 4, 4, 0.5);
+    border: 2px solid;
+    -o-border-image: linear-gradient(45deg, #FABC40, #e25a28) 1;
+       border-image: linear-gradient(45deg, #FABC40, #e25a28) 1;
   }
   .cta-inner .button a:hover {
-    background-color: rgba(4, 4, 4, 0.75);
+    transition: 0.3s;
+    background-color: rgba(4, 4, 4, 0.7);
   }
 }/*# sourceMappingURL=index.css.map */
