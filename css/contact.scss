@@ -369,6 +369,12 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
         border-color: #F8AD3E;
         box-shadow: 0 0 6px rgba(248, 173, 62, 0.7);
     }
+
+    input,
+    textarea,
+    select {
+        font-size: 16px;
+    }
 }
 
 // ------------------------

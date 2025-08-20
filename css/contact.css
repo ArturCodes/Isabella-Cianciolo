@@ -28,6 +28,7 @@
     background-color: #020408;
     height: 100%;
     width: 100%;
+    -webkit-text-size-adjust: 100%;
   }
   body {
     width: 100%;
@@ -613,6 +614,11 @@
     outline: none;
     border-color: #F8AD3E;
     box-shadow: 0 0 6px rgba(248, 173, 62, 0.7);
+  }
+  input,
+  textarea,
+  select {
+    font-size: 16px;
   }
 }
 @media only screen and (min-width: 0px) {
