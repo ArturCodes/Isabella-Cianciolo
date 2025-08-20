@@ -360,7 +360,7 @@
   .contact .contact-inner {
     margin-top: 100px;
     width: 90%;
-    max-width: 1400px;
+    max-width: 1000px;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.75);
     padding: 50px clamp(25px, 5vw, 75px);
@@ -369,7 +369,7 @@
     justify-content: space-between;
   }
   .contact .contact-inner div {
-    width: 40%;
+    width: 45%;
   }
   .contact .contact-inner div div {
     width: 100%;
@@ -409,6 +409,10 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: 0.3s;
+  }
+  .contact .contact-inner img {
+    max-width: 250px;
+    margin-bottom: 25px;
   }
   .contact .contact-inner .button {
     width: 100%;

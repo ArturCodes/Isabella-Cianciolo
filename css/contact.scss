@@ -52,7 +52,7 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
         .contact-inner {
             margin-top: 100px;
             width: 90%;
-            max-width: 1400px;
+            max-width: 1000px;
             margin: 0 auto;
             background-color: rgba(0, 0, 0, 0.75);
             padding: 50px clamp(25px, 5vw, 75px);
@@ -62,7 +62,7 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
             justify-content: space-between;
 
             div {
-                width: 40%;
+                width: 45%;
 
                 div {
                     width: 100%;
@@ -107,6 +107,11 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
                     -webkit-text-fill-color: transparent;
                     transition: 0.3s;
                 }
+            }
+
+            img {
+                max-width: 250px;
+                margin-bottom: 25px;
             }
 
             .button {
