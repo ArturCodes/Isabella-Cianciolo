@@ -220,6 +220,7 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
                     padding: 5px 15px;
                     color: white;
                     cursor: pointer;
+                    height: 35px;
 
                     &:hover {
                         color: #FABC40;
@@ -237,11 +238,37 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
                     }
 
                     input[type="checkbox"] {
-                        accent-color: #FABC40;
-                        width: 14px;
-                        height: 14px;
+                        appearance: none;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        accent-color: #e25a28;
+                        width: 15px;
+                        height: 15px;
                         cursor: pointer;
+                        border: 1px solid rgb(118, 118, 118);
                     }
+
+                    input[type="checkbox"]:checked {
+                        border: 1px solid rgb(118, 118, 118);
+                        background: linear-gradient(45deg, #FABC40, #e25a28);
+                        border-color: #FABC40;
+                        top: -2px;
+
+                    }
+
+                    input[type="checkbox"]:checked::after {
+                        content: "✔";
+                        color: white;
+                        font-size: 10px;
+                        display: flex;
+                        justify-content: center;
+
+                    }
+
+
+
+
+
                 }
 
             }
