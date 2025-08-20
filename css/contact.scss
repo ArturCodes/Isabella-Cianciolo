@@ -167,26 +167,30 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
     }
 }
 
-
+// ------------------------
+//  Form Section
+// ------------------------
 @media only screen and (min-width: 0px) {
     .form-info {
         label {
+            font-family: "Sumana";
             color: #F8AD3E;
             background: linear-gradient(45deg, #FABC40, #e25a28);
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin-bottom: 5px;
             text-transform: capitalize;
         }
 
         input {
+            font-family: "Sumana";
             background: rgba(4, 4, 4, 0.5);
-            padding: 7.5px 12.5px;
+            padding: 0px 12.5px;
             margin-bottom: 15px;
         }
 
         textarea {
+            font-family: "Sumana";
             resize: vertical;
             background: rgba(4, 4, 4, 0.5);
             padding: 7.5px 12.5px;
@@ -296,6 +300,8 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
     }
 
     .button {
+        font-family: "Sumana";
+        background-color: black;
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -303,26 +309,24 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
         align-items: center;
         gap: 25px;
 
-        a {
-            font-size: 22px;
-            letter-spacing: 1.25px;
-            text-transform: capitalize;
-            text-shadow: 1px 1px 5px black, 1px 1px 10px black;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            padding: 20px 25px;
+        font-size: 16px;
+        letter-spacing: 1.25px;
+        text-transform: capitalize;
+        text-shadow: 1px 1px 5px black, 1px 1px 10px black;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 25px;
+        transition: 0.2s;
+
+        background-color: rgba(4, 4, 4, 0.5);
+        border: 1px solid;
+        border-image: $gradient 1;
+
+        &:hover {
             transition: 0.2s;
-
-            background-color: rgba(4, 4, 4, 0.5);
-            border: 2px solid;
-            border-image: $gradient 1;
-
-            &:hover {
-                transition: 0.2s;
-                box-shadow: 0px 0px 35px $pink;
-            }
+            box-shadow: 0px 0px 35px $pink;
         }
     }
 }
