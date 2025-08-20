@@ -185,8 +185,11 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
         input {
             font-family: "Sumana";
             background: rgba(4, 4, 4, 0.5);
-            padding: 0px 12.5px;
-            margin-bottom: 15px;
+            padding: 10px 10px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            line-height: 1.25;
+            vertical-align: middle;
         }
 
         textarea {
@@ -195,6 +198,19 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
             background: rgba(4, 4, 4, 0.5);
             padding: 7.5px 12.5px;
             margin-bottom: 15px;
+        }
+
+        input[type="text"],
+        textarea {
+            border-radius: 6px;
+            padding: 8px 12px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        textarea:focus {
+            border-color: 1px solid $yellow !important;
         }
 
     }

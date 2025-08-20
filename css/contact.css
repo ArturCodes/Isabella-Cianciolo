@@ -474,8 +474,11 @@
   .form-info input {
     font-family: "Sumana";
     background: rgba(4, 4, 4, 0.5);
-    padding: 0px 12.5px;
-    margin-bottom: 15px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.25;
+    vertical-align: middle;
   }
   .form-info textarea {
     font-family: "Sumana";
@@ -483,6 +486,17 @@
     background: rgba(4, 4, 4, 0.5);
     padding: 7.5px 12.5px;
     margin-bottom: 15px;
+  }
+  .form-info input[type=text],
+  .form-info textarea {
+    border-radius: 6px;
+    padding: 8px 12px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  .form-info input[type=text]:focus,
+  .form-info textarea:focus {
+    border-color: 1px solid #F8AD3E !important;
   }
   .selection .service-selection fieldset {
     display: flex;
