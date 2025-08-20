@@ -52,7 +52,7 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
         .contact-inner {
             margin-top: 100px;
             width: 90%;
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
             background-color: rgba(0, 0, 0, 0.75);
             padding: 50px clamp(25px, 5vw, 75px);
@@ -106,6 +106,15 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     transition: 0.3s;
+
+                    &:hover {
+                        color: #F8AD3E;
+                        background: linear-gradient(45deg, #f9be46);
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        transition: 0.3s;
+                    }
                 }
             }
 

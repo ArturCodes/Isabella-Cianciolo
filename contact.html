@@ -91,55 +91,49 @@
                     </div>
 
                     <div class="contact-form">
-                        <form action="./form-submitted.html" method="get" name="Contact Form"><input type="hidden"
+
+                        <form action="./form-submitted.html" method="post" name="Contact Form"><input type="hidden"
                                 name="form-name" value="Contact Form">
 
                             <div class="form-info">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="name" placeholder="Enter Your Name" required="">
+                                <label for="astrology">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter Your Name" required=""
+                                    autocomplete="on">
 
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="Enter Your Email" required="">
+                                <label for="astrology">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Enter Your Email" required=""
+                                    autocomplete="on">
 
-                                <label for="phone">Phone</label>
-                                <input type="tel" id="phone" name="phone" placeholder="Enter Your Phone" required="">
+                                <label for="astrology">Phone</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Enter Your Phone" required=""
+                                    autocomplete="on">
 
+                                <label for="astrology">Message</label>
 
-                                <label class="cs-label-message">
-                                    Message
-                                </label>
-
-                                <textarea name="Message" id="message" placeholder="Write message..."></textarea>
+                                <textarea name="message" id="message" placeholder="Write message..."></textarea>
                             </div>
 
                             <div class="selection">
-
                                 <div class="service-selection">
 
                                     <fieldset>
                                         <legend>Select Service</legend>
                                         <label>
-                                            <input type="checkbox" name="Service" value="natal-chart">
-                                            Natal Chart
+                                            <input type="checkbox" name="Service" value="natal-chart"> Natal Chart
                                         </label>
                                         <label>
-                                            <input type="checkbox" name="Service" value="year-ahead">
-                                            Year Ahead
+                                            <input type="checkbox" name="Service" value="year-ahead"> Year Ahead
                                         </label>
                                         <label>
                                             <input type="checkbox" name="Service" value="relationship-astrology">
                                             Relationship Astrology
                                         </label>
                                         <label>
-                                            <input type="checkbox" name="Service" value="tutoring">
-                                            Tutoring
+                                            <input type="checkbox" name="Service" value="tutoring"> Tutoring
                                         </label>
-
                                     </fieldset>
 
                                 </div>
-
-
                             </div>
 
                             <div class="button-box">
@@ -147,6 +141,7 @@
                                     data-submit="...Sending">Submit</button>
                             </div>
                         </form>
+
                     </div>
 
                 </div>
