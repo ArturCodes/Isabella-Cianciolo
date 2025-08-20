@@ -56,7 +56,6 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
             margin: 0 auto;
             background-color: rgba(0, 0, 0, 0.75);
             padding: 50px clamp(25px, 5vw, 75px);
-
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -206,6 +205,7 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
                 flex-direction: column;
                 border: rgb(118, 118, 118) 1px solid;
                 margin-bottom: 25px;
+                background: rgba(4, 4, 4, 0.5);
 
                 legend {
                     color: #F8AD3E;

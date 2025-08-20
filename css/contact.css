@@ -484,6 +484,7 @@
     flex-direction: column;
     border: rgb(118, 118, 118) 1px solid;
     margin-bottom: 25px;
+    background: rgba(4, 4, 4, 0.5);
   }
   .selection .service-selection fieldset legend {
     color: #F8AD3E;
