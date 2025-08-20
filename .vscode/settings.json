@@ -1,8 +1,5 @@
 {
   "macros": {
-    "foldAllAndThenFoldLevel4": [
-      "editor.unfoldAll", // this is Ctrl+K J
-      "editor.foldLevel4" // this is Ctrl+K 4
-    ]
+    "foldAllAndThenFoldLevel4": ["editor.unfoldAll", "editor.foldLevel4"]
   }
 }
