@@ -485,7 +485,7 @@
     margin-bottom: 15px;
   }
   .form-info input[type=text],
-  .form-info textarea[type=text] {
+  .form-info textarea {
     padding: 8px 12px;
     outline: none;
     transition: border-color 0.3s ease;
@@ -621,7 +621,7 @@
     height: 10vh;
     background-image: url(../images/hero.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
   }
 }
 @media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
@@ -646,7 +646,7 @@
 @media only screen and (min-width: 0px) {
   .buffer3 {
     display: none;
-    height: 3vh;
+    height: 10vh;
     background-image: url(../images/hero.jpg);
     background-size: cover;
     background-position: center;

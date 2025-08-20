@@ -207,7 +207,7 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
         }
 
         input[type="text"],
-        textarea[type="text"] {
+        textarea {
             padding: 8px 12px;
             outline: none;
             transition: border-color 0.3s ease;
@@ -381,7 +381,7 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
         height: 10vh;
         background-image: url(../images/hero.jpg);
         background-size: cover;
-        background-position: center;
+        background-position: bottom;
 
         @media only screen and (min-width: 0px) and (max-width: 450px) {
             display: block;
@@ -402,7 +402,7 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
 
     .buffer3 {
         display: none;
-        height: 3vh;
+        height: 10vh;
         background-image: url(../images/hero.jpg);
         background-size: cover;
         background-position: center;
