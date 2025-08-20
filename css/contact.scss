@@ -250,7 +250,7 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
 
                     input[type="checkbox"]:checked {
                         border: 1px solid rgb(118, 118, 118);
-                        background: linear-gradient(45deg, #FABC40, #e25a28);
+                        background: linear-gradient(45deg, #fabc40bc, #e25a28b6);
                         border-color: #FABC40;
                         top: -2px;
 
@@ -264,10 +264,6 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
                         justify-content: center;
 
                     }
-
-
-
-
 
                 }
 

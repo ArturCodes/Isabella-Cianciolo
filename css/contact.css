@@ -529,7 +529,7 @@
   }
   .selection .service-selection fieldset label input[type=checkbox]:checked {
     border: 1px solid rgb(118, 118, 118);
-    background: linear-gradient(45deg, #FABC40, #e25a28);
+    background: linear-gradient(45deg, rgba(250, 188, 64, 0.737254902), rgba(226, 90, 40, 0.7137254902));
     border-color: #FABC40;
     top: -2px;
   }
