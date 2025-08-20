@@ -91,7 +91,7 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
                 max-width: 450px;
                 font-family: "Sumana";
                 line-height: 1.75;
-                margin-bottom: 35px;
+                margin-bottom: 30px;
                 font-size: 16px;
                 color: #fffcf6;
 
@@ -120,44 +120,14 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
 
             img {
                 max-width: 250px;
-                margin-bottom: 25px;
+                margin-bottom: 10px;
             }
 
-            .button {
-                width: 100%;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                gap: 25px;
-                padding: 15px 0;
-
-                a {
-                    font-size: 22px;
-                    letter-spacing: 1.25px;
-                    text-transform: capitalize;
-                    text-shadow: 1px 1px 5px black, 1px 1px 10px black;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
-                    padding: 20px 25px;
-                    transition: 0.2s;
-
-                    background-color: rgba(4, 4, 4, 0.5);
-                    border: 2px solid;
-                    border-image: $gradient 1;
-
-                    &:hover {
-                        transition: 0.2s;
-                        box-shadow: 0px 0px 35px $pink;
-                    }
-                }
-
-                @media only screen and (min-width: 0px) and (max-width: 450px) {
-                    justify-content: flex-start;
-                }
+            .info {
+                max-width: 250px;
+                text-align: center;
             }
+
         }
 
         @media only screen and (min-width: 0px) and (max-width: 450px) {
@@ -200,9 +170,9 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
             font-family: "Sumana";
             background: rgba(4, 4, 4, 0.5);
             padding: 10px 10px;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
             font-size: 16px;
-            line-height: 1.25;
+            line-height: 1.5;
             vertical-align: middle;
         }
 
@@ -216,7 +186,6 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
 
         input[type="text"],
         textarea {
-            border-radius: 6px;
             padding: 8px 12px;
             outline: none;
             transition: border-color 0.3s ease;
@@ -326,28 +295,24 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
         background-color: rgba(4, 4, 4, 0.5);
         border: 2px solid;
         border-image: $gradient 1;
-        color: red;
+        width: fit-content;
     }
 
     .button {
         font-family: "Sumana";
         background-color: black;
-        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         gap: 25px;
+        padding: 5px 0;
 
         font-size: 16px;
-        letter-spacing: 1.25px;
         text-transform: capitalize;
         text-shadow: 1px 1px 5px black, 1px 1px 10px black;
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 20px 25px;
         transition: 0.2s;
 
         background-color: rgba(4, 4, 4, 0.5);
@@ -358,5 +323,27 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
             transition: 0.2s;
             box-shadow: 0px 0px 35px $pink;
         }
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        -webkit-text-fill-color: white !important;
+        box-shadow: 0 0 0px 1000px black inset;
+        background: rgba(4, 4, 4, 0.5);
+    }
+
+    input,
+    textarea {
+        border: 1px solid #ccc;
+        transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    input:focus,
+    textarea:focus {
+        outline: none;
+        border-color: #F8AD3E;
+        box-shadow: 0 0 6px rgba(248, 173, 62, 0.7);
     }
 }
