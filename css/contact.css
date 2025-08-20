@@ -458,4 +458,67 @@
   .contact .contact-inner p {
     text-align: left;
   }
+}
+@media only screen and (min-width: 0px) {
+  .form-info label {
+    color: #F8AD3E;
+    background: linear-gradient(45deg, #FABC40, #e25a28);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+  }
+  .form-info input {
+    background: rgba(4, 4, 4, 0.5);
+    padding: 7.5px 12.5px;
+    margin-bottom: 15px;
+  }
+  .form-info textarea {
+    resize: vertical;
+    background: rgba(4, 4, 4, 0.5);
+    padding: 7.5px 12.5px;
+    margin-bottom: 15px;
+  }
+  .selection .service-selection fieldset {
+    display: flex;
+    flex-direction: column;
+    border: rgb(118, 118, 118) 1px solid;
+    margin-bottom: 25px;
+  }
+  .selection .service-selection fieldset legend {
+    color: #F8AD3E;
+    background: linear-gradient(45deg, #FABC40, #e25a28);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    font-size: 16px;
+    padding: 0 10px;
+    text-align: center;
+  }
+  .selection .service-selection fieldset label {
+    padding: 5px 15px;
+    color: white;
+    cursor: pointer;
+  }
+  .selection .service-selection fieldset label:hover {
+    color: #FABC40;
+  }
+  .selection .service-selection fieldset label:last-child {
+    margin-bottom: 10px;
+  }
+  .selection .service-selection fieldset label input {
+    position: relative;
+    top: 3px;
+    margin-right: 3px;
+    border: rgba(0, 0, 0, 0.75);
+  }
+  .selection .service-selection fieldset label input[type=checkbox] {
+    accent-color: #FABC40;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+  }
 }/*# sourceMappingURL=contact.css.map */
