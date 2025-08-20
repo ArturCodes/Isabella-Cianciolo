@@ -60,6 +60,8 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
             flex-direction: row;
             justify-content: space-between;
 
+
+
             div {
                 width: 45%;
 
@@ -125,6 +127,28 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
             .info {
                 max-width: 250px;
                 text-align: center;
+            }
+
+            @media only screen and (min-width: 0px) and (max-width: 800px) {
+                display: flex;
+                flex-direction: column;
+
+                div {
+                    width: 100%;
+                }
+
+                p {
+                    span {
+                        display: none;
+                    }
+                }
+
+                img,
+                .info {
+                    display: none;
+                }
+
+
             }
 
         }
@@ -203,7 +227,7 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
             fieldset {
                 display: flex;
                 flex-direction: column;
-                border: rgb(118, 118, 118) 1px solid;
+                border: #ccc 1px solid;
                 margin-bottom: 25px;
                 background: rgba(4, 4, 4, 0.5);
 
@@ -223,8 +247,8 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
                 label {
                     padding: 5px 15px;
                     color: white;
-                    cursor: pointer;
                     height: 35px;
+                    cursor: pointer;
 
                     &:hover {
                         color: #FABC40;
@@ -345,5 +369,47 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
         outline: none;
         border-color: #F8AD3E;
         box-shadow: 0 0 6px rgba(248, 173, 62, 0.7);
+    }
+}
+
+// ------------------------
+//  Buffer Section
+// ------------------------
+@media only screen and (min-width: 0px) {
+
+    .buffer {
+        display: none;
+        height: 10vh;
+        background-image: url(../images/hero.jpg);
+        background-size: cover;
+        background-position: center;
+
+        @media only screen and (min-width: 0px) and (max-width: 450px) {
+            display: block;
+        }
+    }
+
+    .buffer2 {
+        display: none;
+        height: 15vh;
+        background-image: url(../images/hero.jpg);
+        background-size: cover;
+        background-position: center;
+
+        @media only screen and (min-width: 0px) and (max-width: 450px) {
+            display: block;
+        }
+    }
+
+    .buffer3 {
+        display: none;
+        height: 3vh;
+        background-image: url(../images/hero.jpg);
+        background-size: cover;
+        background-position: center;
+
+        @media only screen and (min-width: 0px) and (max-width: 450px) {
+            display: block;
+        }
     }
 }

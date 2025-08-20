@@ -427,6 +427,22 @@
     text-align: center;
   }
 }
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 800px) {
+  .contact .contact-inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact .contact-inner div {
+    width: 100%;
+  }
+  .contact .contact-inner p span {
+    display: none;
+  }
+  .contact .contact-inner img,
+  .contact .contact-inner .info {
+    display: none;
+  }
+}
 @media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
   .contact {
     margin: 35px 0;
@@ -482,7 +498,7 @@
   .selection .service-selection fieldset {
     display: flex;
     flex-direction: column;
-    border: rgb(118, 118, 118) 1px solid;
+    border: #ccc 1px solid;
     margin-bottom: 25px;
     background: rgba(4, 4, 4, 0.5);
   }
@@ -501,8 +517,8 @@
   .selection .service-selection fieldset label {
     padding: 5px 15px;
     color: white;
-    cursor: pointer;
     height: 35px;
+    cursor: pointer;
   }
   .selection .service-selection fieldset label:hover {
     color: #FABC40;
@@ -598,5 +614,47 @@
     outline: none;
     border-color: #F8AD3E;
     box-shadow: 0 0 6px rgba(248, 173, 62, 0.7);
+  }
+}
+@media only screen and (min-width: 0px) {
+  .buffer {
+    display: none;
+    height: 10vh;
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
+  .buffer {
+    display: block;
+  }
+}
+@media only screen and (min-width: 0px) {
+  .buffer2 {
+    display: none;
+    height: 15vh;
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
+  .buffer2 {
+    display: block;
+  }
+}
+@media only screen and (min-width: 0px) {
+  .buffer3 {
+    display: none;
+    height: 3vh;
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
+  .buffer3 {
+    display: block;
   }
 }/*# sourceMappingURL=contact.css.map */
