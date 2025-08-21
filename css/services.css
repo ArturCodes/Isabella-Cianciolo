@@ -183,13 +183,23 @@
 }
 @media only screen and (min-width: 0px) {
   header nav .links ul a {
-    padding: 20px;
+    padding: 0px 5px;
+    margin: 0 15px;
     font-size: 15px;
     font-weight: lighter;
     letter-spacing: 0.5px;
     text-transform: capitalize;
   }
   header nav .links ul a:hover {
+    transition: 0.3s;
+    color: #F8AD3E;
+    background: linear-gradient(45deg, #FABC40, #e25a28);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s;
+  }
+  header nav .links ul .selected {
     transition: 0.3s;
     color: #F8AD3E;
     background: linear-gradient(45deg, #FABC40, #e25a28);

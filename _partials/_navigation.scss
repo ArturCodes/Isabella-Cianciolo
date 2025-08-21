@@ -148,7 +148,8 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
                     }
 
                     a {
-                        padding: 20px;
+                        padding: 0px 5px;
+                        margin: 0 15px;
                         font-size: 15px;
                         font-weight: lighter;
                         letter-spacing: .5px;
@@ -159,6 +160,11 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
                         }
 
                     }
+
+                    .selected {
+                        @include clipBG;
+                    }
+
                 }
             }
 
