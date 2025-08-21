@@ -620,15 +620,23 @@
     transition: border-color 0.3s, box-shadow 0.3s;
   }
   input:focus,
-  textarea:focus {
+  textarea:focus,
+  fieldset:focus {
     outline: none;
     border-color: #F8AD3E;
-    box-shadow: 0 0 6px rgba(248, 173, 62, 0.7);
   }
   input,
   textarea,
-  select {
+  select,
+  fieldset {
     font-size: 16px;
+  }
+  input:hover,
+  textarea:hover,
+  select:hover,
+  fieldset:hover {
+    outline: none;
+    border-color: #F8AD3E;
   }
 }
 @media only screen and (min-width: 0px) {

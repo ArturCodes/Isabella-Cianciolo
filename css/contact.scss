@@ -364,16 +364,23 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
     }
 
     input:focus,
-    textarea:focus {
+    textarea:focus,
+    fieldset:focus {
         outline: none;
         border-color: #F8AD3E;
-        box-shadow: 0 0 6px rgba(248, 173, 62, 0.7);
+        // box-shadow: 0 0 6px rgba(248, 173, 62, 0.7);
     }
 
     input,
     textarea,
-    select {
+    select,
+    fieldset {
         font-size: 16px;
+
+        &:hover {
+            outline: none;
+            border-color: #F8AD3E;
+        }
     }
 }
 
