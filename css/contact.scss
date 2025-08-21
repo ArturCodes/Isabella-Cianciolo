@@ -369,7 +369,6 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
     fieldset:focus {
         outline: none;
         border-color: #F8AD3E;
-        // box-shadow: 0 0 6px rgba(248, 173, 62, 0.7);
     }
 
     input,
@@ -377,10 +376,11 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
     select,
     fieldset {
         font-size: 16px;
+        border: #707070 1px solid;
 
         &:hover {
             outline: none;
-            border-color: #F8AD3E;
+            border: #F8AD3E 1px solid !important;
         }
     }
 }

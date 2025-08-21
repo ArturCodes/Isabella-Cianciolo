@@ -631,13 +631,14 @@
   select,
   fieldset {
     font-size: 16px;
+    border: #707070 1px solid;
   }
   input:hover,
   textarea:hover,
   select:hover,
   fieldset:hover {
     outline: none;
-    border-color: #F8AD3E;
+    border: #F8AD3E 1px solid !important;
   }
 }
 @media only screen and (min-width: 0px) {
