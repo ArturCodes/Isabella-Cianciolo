@@ -56,6 +56,18 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./css/index.css">
 
+    <!-- ✅ Speculation Rules (Chromium browsers) -->
+    <script type="speculationrules">
+        {
+            "prefetch": [
+            {
+                "where": { "href_matches": "/*" },
+                "eagerness": "moderate"
+            }
+            ]
+        }
+  </script>
+
 </head>
 
 <body>
@@ -200,6 +212,26 @@
         </footer>
 
     </div>
+
+
+    <!-- ✅ Prefetch Fallback for Firefox & Safari -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll("a[href]").forEach(link => {
+                link.addEventListener("mouseenter", () => {
+                    // Skip if already added
+                    if (!document.querySelector(`link[rel="prefetch"][href="${link.href}"]`)) {
+                        const prefetch = document.createElement("link");
+                        prefetch.rel = "prefetch";
+                        prefetch.href = link.href;
+                        document.head.appendChild(prefetch);
+                    }
+                }, { once: true }); // only trigger once per link
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>

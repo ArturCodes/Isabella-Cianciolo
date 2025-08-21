@@ -2,5 +2,5 @@
   "macros": {
     "foldAllAndThenFoldLevel4": ["editor.unfoldAll", "editor.foldLevel4"]
   },
-  "cSpell.words": ["birthchart"]
+  "cSpell.words": ["birthchart", "speculationrules"]
 }
