@@ -386,6 +386,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
   }
   .contact .contact-inner h1 {
     width: 100%;
