@@ -56,17 +56,18 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./css/index.css">
 
-    <!-- ✅ Speculation Rules (Chromium browsers) -->
+    <!-- ✅ Speculation Rules (Prerender everything) -->
     <script type="speculationrules">
         {
-            "prefetch": [
+        "prerender": [
             {
-                "where": { "href_matches": "/*" },
-                "eagerness": "moderate"
+            "source": "document",
+            "where": { "href_matches": "/*" }
             }
-            ]
+        ]
         }
-  </script>
+    </script>
+
 
 </head>
 
@@ -216,12 +217,16 @@
     <!-- ✅ Prefetch Fallback for Firefox & Safari -->
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-            document.querySelectorAll("a[href]").forEach(link => {
-                link.addEventListener("mouseenter", () => {
-                    // Skip if already added
-                    if (!document.querySelector(`link[rel="prefetch"][href="${link.href}"]`)) {
+            document.querySelectorAll('a[href^="/"]').forEach(link => {
+                link.addEventListener("pointerenter", () => {
+                    // Skip if already prefetched
+                    if (!document.querySelector(`link[rel="prefetch"][href="${link.href}"]`) &&
+                        !document.querySelector(`link[rel="preload"][href="${link.href}"]`)) {
+
                         const prefetch = document.createElement("link");
-                        prefetch.rel = "prefetch";
+                        // Use prefetch if supported, else fallback to preload
+                        prefetch.rel = prefetch.relList.supports("prefetch") ? "prefetch" : "preload";
+                        prefetch.as = prefetch.rel === "prefetch" ? "document" : "fetch";
                         prefetch.href = link.href;
                         document.head.appendChild(prefetch);
                     }
@@ -229,6 +234,7 @@
             });
         });
     </script>
+
 
 
 </body>
