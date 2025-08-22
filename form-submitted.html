@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content=" ">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://isabella-cianciolo.netlify.app/font-submitted">
+
+    <!-- HTML Meta Tags -->
+    <title>Form Submitted - Astrology for Mindfulness</title>
+    <meta name="description" content=" ">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content=" Astrology " />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+
+    <!-- Preload Sumana Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sumana:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Preload Fonts + Images -->
+    <link rel="preload" href="/images/logo.png" as="image">
+    <link rel="preload" href="/fonts/sumana-v11-latin-regular.woff2" as="font" type="font/woff2"
+        crossorigin="anonymous">
+
+    <!-- Theme color -->
+    <meta content='#060404' name='theme-color'>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/font-submitted.css">
+
+    <!-- ✅ Speculation Rules (Chromium browsers) -->
+    <script type="speculationrules">
+        {
+            "prefetch": [
+            {
+                "where": { "href_matches": "/*" },
+                "eagerness": "moderate"
+            }
+            ]
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="scroll-wrapper">
+
+        <header>
+
+            <nav>
+                <div id="overlay" onclick="closeMobile()" class="" aria-hidden="true"></div>
+                <a href="./index.html" class="logo">
+                    <div class="img">
+                        <img src="./images/logo.png" alt="logo">
+                    </div>
+                    <h1> Astrology For Mindfulness </h1>
+                </a>
+
+                <button class="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="Services.html">Services</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+
+            <script>
+                const hamburger = document.querySelector(".hamburger");
+                const links = document.querySelector(".links");
+                const overlay = document.getElementById("overlay");
+
+                // Function to open/close mobile menu
+                hamburger.addEventListener("click", () => {
+                    const isActive = hamburger.classList.toggle("active");
+                    links.classList.toggle("active");
+                    overlay.classList.toggle("active", isActive); // show overlay only if menu is active
+                });
+
+                // Function to close mobile menu
+                function closeMobile() {
+                    hamburger.classList.remove("active");
+                    links.classList.remove("active");
+                    overlay.classList.remove("active");
+                }
+
+                // Optional: close menu if clicking outside on mobile
+                document.addEventListener("click", (e) => {
+                    if (
+                        !hamburger.contains(e.target) &&
+                        !links.contains(e.target) &&
+                        window.innerWidth <= 768
+                    ) {
+                        closeMobile();
+                    }
+                });
+            </script>
+
+
+        </header>
+
+        <main>
+            <div class="hero"></div>
+
+            <div class="form-submitted">
+                <div class="form-submitted-inner">
+
+                    <div class="form-submitted-text">
+                        <h1>Thank You</h1>
+                        <p>Your form inquiry has been submitted. <br> I'll will reach out to you as soon. </p>
+
+                        <p><a href="mailto:astrologyformindfulness@Gmail.com">AstrologyForMindfulness@gmail.com</a></p>
+                        <img src="./images/profile.png" alt="profile">
+                        <p class="info">Isabella Cianciolo <br>Saint Paul, MN</p>
+                    </div>
+
+                    <div class="buffer3" style="background-position: 00px -150px; transform: scaleY(-1);"></div>
+
+
+
+                </div>
+            </div>
+
+        </main>
+
+        <div class="buffer"></div>
+
+        <footer>
+            <div class="footer-inner">
+                Copyright © 2025 - Isabella Cianciolo - All Rights Reserved
+                <br><a href="https://artshawebdesign.com/"> ARTSHA Web Design & Development </a>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- ✅ Prefetch Fallback for Firefox & Safari -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll("a[href]").forEach(link => {
+                link.addEventListener("mouseenter", () => {
+                    // Skip if already added
+                    if (!document.querySelector(`link[rel="prefetch"][href="${link.href}"]`)) {
+                        const prefetch = document.createElement("link");
+                        prefetch.rel = "prefetch";
+                        prefetch.href = link.href;
+                        document.head.appendChild(prefetch);
+                    }
+                }, { once: true }); // only trigger once per link
+            });
+        });
+    </script>
+
+</body>
+
+</html>

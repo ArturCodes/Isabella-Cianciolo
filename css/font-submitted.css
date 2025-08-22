@@ -1,1 +1,512 @@
-/*# sourceMappingURL=font-submitted.css.map */
+@media only screen and (min-width: 0px) {
+  @font-face {
+    font-display: swap;
+    font-family: "Italiana";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/italiana-v21-latin-regular.woff2") format("woff2");
+  }
+  @font-face {
+    font-display: swap;
+    font-family: "Sumana";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/sumana-v11-latin-regular.woff2") format("woff2");
+  }
+}
+@media only screen and (min-width: 0px) {
+  * {
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    padding: 0;
+    margin: 0;
+  }
+  html {
+    background-color: #020408;
+    height: 100%;
+    width: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+  html,
+  body {
+    height: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+  .scroll-wrapper {
+    height: 100dvh;
+    margin: 0 auto;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    overflow-x: hidden;
+  }
+}
+@media only screen and (min-width: 0px) {
+  #overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    z-index: 20;
+  }
+  #overlay.active {
+    display: block;
+  }
+}
+@media only screen and (min-width: 0px) {
+  header {
+    position: fixed;
+    width: 100%;
+    max-width: 1920px;
+    background-color: #020408;
+    background-color: rgba(0, 0, 0, 0.95);
+    box-shadow: 0px 0px 5px #B0576E, 0px 0px 25px #B0576E;
+  }
+  header nav {
+    width: 96%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+  }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
+  header nav {
+    width: 96%;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+}
+@media only screen and (min-width: 0px) {
+  header nav .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  header nav .logo:hover h1 {
+    transition: 0.3s;
+    color: #F8AD3E;
+    background: linear-gradient(45deg, #FABC40, #e25a28);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s;
+  }
+  header nav .logo h1 {
+    color: white;
+    position: relative;
+    font-weight: 100;
+    font-size: 22px;
+    padding: 25px 0;
+    font-weight: lighter;
+    z-index: 10;
+  }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
+  header nav .logo h1 {
+    padding: 15px 0;
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 0px) {
+  header nav .logo svg {
+    padding-right: 10px;
+    width: 80px;
+    height: 80px;
+  }
+  header nav .logo img {
+    width: 75px;
+    margin-right: 5px;
+  }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
+  header nav .logo img {
+    width: 65px;
+  }
+}
+@media only screen and (min-width: 0px) {
+  header nav .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 768px) {
+  header nav .links {
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 65vw;
+    width: 275px;
+    transition: right 0.4s;
+    padding-bottom: 100px;
+  }
+  header nav .links ul {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 0px) {
+  header nav .links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 10px;
+    font-family: "Sumana";
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 768px) {
+  header nav .links ul {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 0px) {
+  header nav .links ul a {
+    padding: 0px 5px;
+    margin: 0 15px;
+    font-size: 15px;
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+  }
+  header nav .links ul a:hover {
+    transition: 0.3s;
+    color: #F8AD3E;
+    background: linear-gradient(45deg, #FABC40, #e25a28);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s;
+  }
+  header nav .links ul .selected {
+    transition: 0.3s;
+    color: #F8AD3E;
+    background: linear-gradient(45deg, #FABC40, #e25a28);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s;
+  }
+  header nav .links.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    height: 100vh;
+    width: 65vw;
+    width: 275px;
+    transition: right 0.4s;
+    z-index: 25;
+    border-left: 2px solid;
+    -o-border-image: linear-gradient(45deg, #FABC40, #e25a28) 1;
+       border-image: linear-gradient(45deg, #FABC40, #e25a28) 1;
+  }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 768px) {
+  header nav .links.active ul {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+  }
+  header nav .links.active ul li a {
+    padding: 0;
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 0px) {
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    z-index: 9999;
+  }
+  .hamburger span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #e25a28;
+    background: linear-gradient(45deg, #FABC40, #e25a28);
+    border-radius: 3px;
+    transition: all 0.2s ease;
+    transform: translateZ(0);
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  nav .links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    width: 200px;
+    flex-direction: column;
+    display: none;
+  }
+  nav .links ul {
+    flex-direction: column;
+    gap: 0;
+  }
+  nav .links ul li a {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+  nav .links.active {
+    display: flex;
+    flex-direction: column;
+  }
+  nav .hamburger {
+    display: flex;
+    margin-right: 15px;
+  }
+  nav .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6.75px, 5px);
+  }
+  nav .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  nav .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7.25px, -5px);
+  }
+}
+@media only screen and (min-width: 0px) {
+  .footer-inner {
+    text-align: center;
+    padding: 15px 0 15px;
+    margin: 0 auto;
+    font-size: 13px;
+    color: white;
+    text-shadow: 0px 0px 3px black;
+    line-height: 1.5;
+    transition: 0.3s;
+  }
+  .footer-inner:hover {
+    transition: 0.3s;
+    color: white;
+  }
+  .footer-inner:hover a {
+    transition: 0.3s;
+    color: #FDCD6E;
+    transition: 0.3s;
+    color: #F8AD3E;
+    background: linear-gradient(45deg, #FABC40, #e25a28);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s;
+  }
+  .footer-inner a {
+    text-shadow: none;
+    transition: 0.3s;
+    color: white;
+  }
+}
+@media only screen and (min-width: 0px) {
+  body {
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
+  body {
+    background-image: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+}
+@media only screen and (min-width: 0px) {
+  .hero {
+    display: none;
+    height: 20vh;
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+  }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
+  .hero {
+    display: block;
+  }
+}
+@media only screen and (min-width: 0px) {
+  .form-submitted {
+    margin-top: 175px;
+    margin-bottom: 75px;
+    width: 100%;
+  }
+  .form-submitted .form-submitted-inner {
+    text-align: center;
+    margin-top: 100px;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 50px clamp(25px, 5vw, 75px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-submitted .form-submitted-inner div {
+    width: 45%;
+  }
+  .form-submitted .form-submitted-inner div div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .form-submitted .form-submitted-inner h1 {
+    width: 100%;
+    max-width: 900px;
+    font-weight: lighter;
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #F8AD3E;
+    background: linear-gradient(45deg, #FABC40, #e25a28);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s;
+    text-transform: uppercase;
+  }
+  .form-submitted .form-submitted-inner p {
+    width: 100%;
+    max-width: 450px;
+    font-family: "Sumana";
+    line-height: 1.75;
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #fffcf6;
+  }
+  .form-submitted .form-submitted-inner p:last-child {
+    margin-bottom: 0;
+  }
+  .form-submitted .form-submitted-inner p a {
+    color: #F8AD3E;
+    background: linear-gradient(45deg, #FABC40, #e25a28);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s;
+  }
+  .form-submitted .form-submitted-inner p a:hover {
+    color: #F8AD3E;
+    background: linear-gradient(45deg, #f9be46);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s;
+  }
+  .form-submitted .form-submitted-inner img {
+    max-width: 250px;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 800px) {
+  .form-submitted .form-submitted-inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-submitted .form-submitted-inner div {
+    width: 100%;
+  }
+  .form-submitted .form-submitted-inner p span {
+    display: none;
+  }
+  .form-submitted .form-submitted-inner img,
+  .form-submitted .form-submitted-inner .info {
+    display: none;
+  }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
+  .form-submitted {
+    margin: 35px 0;
+  }
+  .form-submitted .form-submitted-inner {
+    padding: 0px 0;
+    width: 90%;
+  }
+  .form-submitted .form-submitted-inner h1 {
+    font-size: 30px;
+  }
+  .form-submitted .form-submitted-inner h1,
+  .form-submitted .form-submitted-inner p {
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 0px) {
+  .buffer {
+    display: none;
+    height: 10vh;
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-position: bottom;
+  }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
+  .buffer {
+    display: block;
+  }
+}
+@media only screen and (min-width: 0px) {
+  .buffer2 {
+    display: none;
+    height: 15vh;
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
+  .buffer2 {
+    display: block;
+  }
+}
+@media only screen and (min-width: 0px) {
+  .buffer3 {
+    display: none;
+    height: 10vh;
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
+  .buffer3 {
+    display: block;
+  }
+}/*# sourceMappingURL=font-submitted.css.map */

@@ -1,0 +1,214 @@
+// ---------------------------
+//      Partials Imports
+// ---------------------------
+@use '../_partials/resets';
+@use '../_partials/navigation';
+@use '../_partials/footer';
+
+// ------------------------
+//        VARIABLES
+// ------------------------
+$pink: #d36b83;
+$yellow: #F8AD3E;
+$gradient: linear-gradient(45deg, #FABC40, #e25a28);
+
+
+@media only screen and (min-width: 0px) {
+    body {
+        background-image: url(../images/hero.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+        @media only screen and (min-width: 0px) and (max-width: 450px) {
+            background-image: none;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+        }
+    }
+
+    .hero {
+        display: none;
+        height: 20vh;
+        background-image: url(../images/hero.jpg);
+        background-size: cover;
+
+        @media only screen and (min-width: 0px) and (max-width: 450px) {
+            display: block;
+        }
+    }
+}
+
+// ------------------------
+//  Contact Section
+// ------------------------
+@media only screen and (min-width: 0px) {
+    .form-submitted {
+        margin-top: 175px;
+        margin-bottom: 75px;
+        width: 100%;
+
+        .form-submitted-inner {
+            text-align: center;
+            margin-top: 100px;
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.75);
+            padding: 50px clamp(25px, 5vw, 75px);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            div {
+                width: 45%;
+
+                div {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 10px;
+                }
+            }
+
+            h1 {
+                width: 100%;
+                max-width: 900px;
+                font-weight: lighter;
+                font-size: 32px;
+                margin-bottom: 25px;
+                color: #F8AD3E;
+                background: linear-gradient(45deg, #FABC40, #e25a28);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                transition: 0.3s;
+                text-transform: uppercase;
+            }
+
+            p {
+                width: 100%;
+                max-width: 450px;
+                font-family: "Sumana";
+                line-height: 1.75;
+                margin-bottom: 30px;
+                font-size: 16px;
+                color: #fffcf6;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                a {
+                    color: #F8AD3E;
+                    background: linear-gradient(45deg, #FABC40, #e25a28);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    transition: 0.3s;
+
+                    &:hover {
+                        color: #F8AD3E;
+                        background: linear-gradient(45deg, #f9be46);
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        transition: 0.3s;
+                    }
+                }
+            }
+
+            img {
+                max-width: 250px;
+                margin-bottom: 10px;
+            }
+
+
+            @media only screen and (min-width: 0px) and (max-width: 800px) {
+                display: flex;
+                flex-direction: column;
+
+                div {
+                    width: 100%;
+                }
+
+                p {
+                    span {
+                        display: none;
+                    }
+                }
+
+                img,
+                .info {
+                    display: none;
+                }
+
+
+            }
+
+        }
+
+        @media only screen and (min-width: 0px) and (max-width: 450px) {
+            margin: 35px 0;
+
+            .form-submitted-inner {
+                padding: 0px 0;
+                width: 90%;
+
+                h1 {
+                    font-size: 30px;
+                }
+
+                h1,
+                p {
+                    text-align: left;
+                }
+            }
+        }
+
+    }
+}
+
+// ------------------------
+//  Buffer Section
+// ------------------------
+@media only screen and (min-width: 0px) {
+
+    .buffer {
+        display: none;
+        height: 10vh;
+        background-image: url(../images/hero.jpg);
+        background-size: cover;
+        background-position: bottom;
+
+        @media only screen and (min-width: 0px) and (max-width: 450px) {
+            display: block;
+        }
+    }
+
+    .buffer2 {
+        display: none;
+        height: 15vh;
+        background-image: url(../images/hero.jpg);
+        background-size: cover;
+        background-position: center;
+
+        @media only screen and (min-width: 0px) and (max-width: 450px) {
+            display: block;
+        }
+    }
+
+    .buffer3 {
+        display: none;
+        height: 10vh;
+        background-image: url(../images/hero.jpg);
+        background-size: cover;
+        background-position: center;
+
+        @media only screen and (min-width: 0px) and (max-width: 450px) {
+            display: block;
+        }
+    }
+}
