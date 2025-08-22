@@ -484,7 +484,7 @@
 @media only screen and (min-width: 0px) {
   .buffer3 {
     display: none;
-    height: 3vh;
+    height: 5vh;
     background-image: url(../images/hero.jpg);
     background-size: cover;
     background-position: center;
