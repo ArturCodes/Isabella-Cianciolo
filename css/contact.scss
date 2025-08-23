@@ -205,6 +205,8 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
             background: rgba(4, 4, 4, 0.5);
             padding: 7.5px 12.5px;
             margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
         }
 
         input[type="text"],
@@ -213,6 +215,8 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
             outline: none;
             transition: border-color 0.3s ease;
             font-family: sans-serif;
+            position: relative;
+            z-index: -1;
         }
 
         input[type="text"]:focus,
