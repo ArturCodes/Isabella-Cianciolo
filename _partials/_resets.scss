@@ -71,3 +71,14 @@ $yellow: #F8AD3E;
 
 
 }
+
+// ------------------------ 
+//   Scroll Bar
+// ------------------------
+@media only screen and (min-width: 0px) {
+
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: #d36b83 #111;
+    }
+}
