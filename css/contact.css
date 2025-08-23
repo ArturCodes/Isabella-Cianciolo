@@ -501,6 +501,7 @@
     padding: 8px 12px;
     outline: none;
     transition: border-color 0.3s ease;
+    font-family: sans-serif;
   }
   .form-info input[type=text]:focus,
   .form-info textarea:focus {
@@ -558,6 +559,8 @@
     content: "✔";
     color: white;
     font-size: 10px;
+    position: relative;
+    top: -2px;
     display: flex;
     justify-content: center;
   }
@@ -633,6 +636,7 @@
   fieldset {
     font-size: 16px;
     border: #707070 1px solid;
+    font-family: sans-serif !important;
   }
   input:hover,
   textarea:hover,

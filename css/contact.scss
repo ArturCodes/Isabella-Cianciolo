@@ -212,6 +212,7 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
             padding: 8px 12px;
             outline: none;
             transition: border-color 0.3s ease;
+            font-family: sans-serif;
         }
 
         input[type="text"]:focus,
@@ -282,6 +283,8 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
                             content: "✔";
                             color: white;
                             font-size: 10px;
+                            position: relative;
+                            top: -2px;
                             display: flex;
                             justify-content: center;
 
@@ -378,6 +381,7 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
     fieldset {
         font-size: 16px;
         border: #707070 1px solid;
+        font-family: sans-serif !important;
 
         &:hover {
             outline: none;
