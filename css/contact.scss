@@ -367,6 +367,7 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
     textarea {
         border: 1px solid #707070;
         transition: border-color 0.3s, box-shadow 0.3s;
+        caret-color: #F8AD3E;
     }
 
     input:focus,

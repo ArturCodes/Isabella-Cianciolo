@@ -22,6 +22,7 @@
     color: white;
     padding: 0;
     margin: 0;
+    caret-color: transparent;
   }
   html {
     background-color: #020408;
