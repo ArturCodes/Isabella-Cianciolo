@@ -502,8 +502,6 @@
     background: rgba(4, 4, 4, 0.5);
     padding: 7.5px 12.5px;
     margin-bottom: 15px;
-    position: relative;
-    z-index: 1;
   }
   .form-info input[type=text],
   .form-info textarea {
@@ -511,8 +509,6 @@
     outline: none;
     transition: border-color 0.3s ease;
     font-family: sans-serif;
-    position: relative;
-    z-index: -1;
   }
   .form-info input[type=text]:focus,
   .form-info textarea:focus {
