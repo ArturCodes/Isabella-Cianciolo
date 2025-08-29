@@ -390,6 +390,16 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
             border: #F8AD3E 1px solid !important;
         }
     }
+
+
+    fieldset::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        border-top: 1px solid #F8AD3E;
+    }
 }
 
 // ------------------------
