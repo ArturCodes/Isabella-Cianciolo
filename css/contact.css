@@ -533,6 +533,8 @@
     font-size: 16px;
     padding: 0 10px;
     text-align: center;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .selection .service-selection fieldset label {
     padding: 5px 15px;
