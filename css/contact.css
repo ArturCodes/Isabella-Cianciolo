@@ -379,7 +379,7 @@
   .contact .contact-inner {
     margin-top: 100px;
     width: 90%;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.75);
     padding: 50px clamp(25px, 5vw, 75px);
