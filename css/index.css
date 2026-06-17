@@ -397,7 +397,7 @@ body {
     font-weight: lighter;
     letter-spacing: 1px;
     margin-bottom: 80px;
-    max-width: 900px;
+    max-width: 600px;
     line-height: 1.25;
   }
 }
@@ -411,7 +411,6 @@ body {
   .hero-inner p {
     font-size: 22px;
     letter-spacing: 1.25px;
-    text-transform: capitalize;
     text-shadow: 1px 1px 3px black, 1px 1px 3px black;
     display: flex;
     flex-direction: row;
