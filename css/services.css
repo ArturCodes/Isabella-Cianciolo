@@ -454,7 +454,7 @@ html h1 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 20px 25px;
+    padding: 16px 24px;
     transition: 0.2s;
     background-color: rgba(4, 4, 4, 0.5);
     border: 2px solid;
@@ -617,7 +617,7 @@ html h1 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 20px 25px;
+    padding: 16px 24px;
     transition: 0.2s;
     background-color: rgba(4, 4, 4, 0.5);
     border: 2px solid;
@@ -692,7 +692,7 @@ html h1 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 20px 25px;
+    padding: 16px 24px;
     transition: 0.2s;
     background-color: rgba(4, 4, 4, 0.5);
     border: 2px solid;
