@@ -147,7 +147,7 @@ html h1 {
 @media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
   header nav .logo h1 {
     padding: 15px 0;
-    font-size: 18px;
+    font-size: 28px;
   }
 }
 @media only screen and (min-width: 0px) {
@@ -421,7 +421,7 @@ body {
 @media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 450px) {
   .hero-inner h1 {
     padding: 0 25px;
-    font-size: 40px;
+    font-size: 60px;
   }
 }
 @media only screen and (min-width: 0px) {
