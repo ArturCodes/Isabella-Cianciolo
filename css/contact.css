@@ -418,8 +418,7 @@ html h1 {
   .contact .contact-inner h1 {
     width: 100%;
     max-width: 900px;
-    font-weight: lighter;
-    font-size: 32px;
+    font-size: 44px;
     margin-bottom: 25px;
     color: #F8AD3E;
     background: linear-gradient(45deg, #FABC40, #e25a28);
@@ -427,7 +426,6 @@ html h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: 0.3s;
-    text-transform: uppercase;
   }
   .contact .contact-inner p {
     width: 100%;

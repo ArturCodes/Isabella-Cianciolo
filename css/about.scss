@@ -67,7 +67,7 @@ body {
                 width: 100%;
                 max-width: 900px;
                 margin: 0 auto;
-                font-size: 40px;
+                font-size: clamp(40px, 5vw, 48px);
                 margin-bottom: 25px;
                 text-align: center;
                 color: #F8AD3E;
@@ -222,7 +222,7 @@ body {
                 width: 100%;
                 max-width: 900px;
                 margin: 0 auto;
-                font-size: 40px;
+                font-size: clamp(40px, 5vw, 48px);
                 margin-bottom: 25px;
                 text-align: center;
                 color: #F8AD3E;
