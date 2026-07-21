@@ -419,8 +419,7 @@ html h1 {
   .form-submitted .form-submitted-inner h1 {
     width: 100%;
     max-width: 900px;
-    font-weight: lighter;
-    font-size: 32px;
+    font-size: clamp(40px, 5vw, 48px);
     margin-bottom: 25px;
     color: #F8AD3E;
     background: linear-gradient(45deg, #FABC40, #e25a28);
@@ -428,7 +427,6 @@ html h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: 0.3s;
-    text-transform: uppercase;
   }
   .form-submitted .form-submitted-inner p {
     width: 100%;
