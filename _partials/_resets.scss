@@ -23,6 +23,22 @@ $yellow: #F8AD3E;
         font-weight: 400;
         src: url('../fonts/sumana-v11-latin-regular.woff2') format('woff2');
     }
+
+    @font-face {
+        font-display: swap;
+        font-family: 'Tangerine';
+        font-style: normal;
+        font-weight: 400;
+        src: url('../fonts/tangerine-v18-latin-regular.woff2') format('woff2');
+    }
+
+    @font-face {
+        font-display: swap;
+        font-family: 'Tangerine';
+        font-style: normal;
+        font-weight: 700;
+        src: url('../fonts/tangerine-v18-latin-700.woff2') format('woff2');
+    }
 }
 
 // ------------------------
@@ -79,5 +95,13 @@ $yellow: #F8AD3E;
     * {
         scrollbar-width: thin;
         scrollbar-color: #d36b83 #111;
+    }
+}
+
+html {
+
+    h1 {
+        font-weight: 700;
+        font-family: 'Tangerine';
     }
 }

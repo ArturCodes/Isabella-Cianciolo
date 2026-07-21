@@ -23,7 +23,6 @@ $gradient: linear-gradient(45deg, #FABC40, #e25a28);
 }
 
 body {
-
     background-image: url(../images/hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -74,10 +73,8 @@ body {
         h1 {
             width: 90%;
             margin: 0 auto;
-            font-size: 48px;
-            text-transform: uppercase;
+            font-size: 64px;
             text-shadow: 1px 1px 3px black, 1px 1px 3px black;
-            font-weight: lighter;
             letter-spacing: 1px;
             margin-bottom: 80px;
             max-width: 600px;
@@ -145,8 +142,7 @@ body {
                     width: 100%;
                     max-width: 900px;
                     margin: 0 auto;
-                    font-weight: lighter;
-                    font-size: 32px;
+                    font-size: 40px;
                     margin-bottom: 25px;
                     text-align: center;
                     color: #FDCD6E;
@@ -220,7 +216,6 @@ body {
 
         h1 {
             font-size: 48px;
-            text-transform: uppercase;
             text-shadow: 1px 1px 3px black, 1px 1px 3px black;
             font-weight: lighter;
             letter-spacing: 1px;

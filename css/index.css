@@ -13,6 +13,20 @@
     font-weight: 400;
     src: url("../fonts/sumana-v11-latin-regular.woff2") format("woff2");
   }
+  @font-face {
+    font-display: swap;
+    font-family: "Tangerine";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/tangerine-v18-latin-regular.woff2") format("woff2");
+  }
+  @font-face {
+    font-display: swap;
+    font-family: "Tangerine";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/tangerine-v18-latin-700.woff2") format("woff2");
+  }
 }
 @media only screen and (min-width: 0px) {
   * {
@@ -56,6 +70,11 @@
     scrollbar-color: #d36b83 #111;
   }
 }
+html h1 {
+  font-weight: 700;
+  font-family: "Tangerine";
+}
+
 @media only screen and (min-width: 0px) {
   #overlay {
     display: none;
@@ -391,10 +410,8 @@ body {
   .hero-inner h1 {
     width: 90%;
     margin: 0 auto;
-    font-size: 48px;
-    text-transform: uppercase;
+    font-size: 64px;
     text-shadow: 1px 1px 3px black, 1px 1px 3px black;
-    font-weight: lighter;
     letter-spacing: 1px;
     margin-bottom: 80px;
     max-width: 600px;
@@ -458,8 +475,7 @@ body {
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
-    font-weight: lighter;
-    font-size: 32px;
+    font-size: 40px;
     margin-bottom: 25px;
     text-align: center;
     color: #FDCD6E;
@@ -529,7 +545,6 @@ body {
   }
   .cta-inner h1 {
     font-size: 48px;
-    text-transform: uppercase;
     text-shadow: 1px 1px 3px black, 1px 1px 3px black;
     font-weight: lighter;
     letter-spacing: 1px;

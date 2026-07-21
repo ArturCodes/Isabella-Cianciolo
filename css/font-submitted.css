@@ -13,6 +13,20 @@
     font-weight: 400;
     src: url("../fonts/sumana-v11-latin-regular.woff2") format("woff2");
   }
+  @font-face {
+    font-display: swap;
+    font-family: "Tangerine";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/tangerine-v18-latin-regular.woff2") format("woff2");
+  }
+  @font-face {
+    font-display: swap;
+    font-family: "Tangerine";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/tangerine-v18-latin-700.woff2") format("woff2");
+  }
 }
 @media only screen and (min-width: 0px) {
   * {
@@ -56,6 +70,11 @@
     scrollbar-color: #d36b83 #111;
   }
 }
+html h1 {
+  font-weight: 700;
+  font-family: "Tangerine";
+}
+
 @media only screen and (min-width: 0px) {
   #overlay {
     display: none;
