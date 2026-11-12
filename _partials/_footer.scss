@@ -1,52 +1,33 @@
-// ------------------------
-//        VARIABLES
-// ------------------------
-$pink: #d36b83;
-$yellow: #F8AD3E;
+.footer-inner {
+    text-align: center;
+    padding: 15px 0;
+    margin: 0 auto;
+    font-size: 13px;
+    color: white;
+    text-shadow: 0 0 3px black;
+    line-height: 1.5;
 
-@mixin clipBG {
-    transition: 0.3s;
-    color: #F8AD3E;
-    background: linear-gradient(45deg, #FABC40, #e25a28);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: 0.3s;
-}
-
-
-
-// ------------------------
-//  Footer Section
-// ------------------------
-@media only screen and (min-width: 0px) {
-
-    .footer-inner {
-        text-align: center;
-        padding: 15px 0 15px;
-        margin: 0 auto;
-        font-size: 13px;
+    a {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+        text-shadow: none;
         color: white;
-        text-shadow: 0px 0px 3px black;
-        line-height: 1.5;
-        transition: .3s;
 
-        &:hover {
-            transition: .3s;
-            color: white;
-
-            a {
-                transition: .3s;
-                color: #FDCD6E;
-                @include clipBG;
+        @media (hover: hover) {
+            &:hover {
+                color: #fdcd6e;
+                text-decoration: underline;
             }
-
         }
 
-        a {
-            text-shadow: none;
-            transition: .3s;
-            color: white;
+        @media (prefers-reduced-motion: no-preference) {
+            transition: color .15s ease;
+        }
+
+        &:focus-visible {
+            outline: 2px solid #fdcd6e;
+            outline-offset: 2px;
         }
     }
 }

@@ -1,0 +1,124 @@
+@use '../_partials/resets';
+@use '../_partials/navigation';
+@use '../_partials/footer';
+
+$gold: #fdcd6e;
+
+body {
+    background: #020408;
+    color: #fffcf6;
+}
+
+.directory {
+    margin: auto;
+    width: min(92%, 1180px);
+    padding: 114px 0 24px;
+    font: 16px/1.6 Sumana, Georgia, serif;
+    overflow-wrap: anywhere;
+}
+
+.directory h1, .cta-inner h2 {
+    color: $gold;
+    font: 700 clamp(42px, 5vw, 60px)/1.1 Tangerine, cursive;
+}
+
+.directory > h1, .intro, .coordinator, .cta-inner {
+    text-align: center;
+}
+
+.intro { margin: 6px 0 28px; }
+
+.businesses {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.businesses article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: clamp(18px, 2vw, 28px);
+    border: 1px solid #60444a;
+    border-top-color: #d36b83;
+    background: #101017;
+}
+
+.category {
+    color: $gold;
+    font: 15px/1.5 Georgia, serif;
+}
+
+.businesses h2 {
+    margin: 5px 0 12px;
+    font: 500 26px/1.15 Georgia, serif;
+}
+
+.location { margin-top: 12px; color: #e4c6cc; }
+
+.directory a, .cta-inner a, nav .links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+}
+
+.phone, .coordinator a { color: $gold; text-decoration: underline; }
+.website-action { margin-top: auto; padding-top: 16px; }
+.website-action a, .cta-inner a {
+    padding: 6px 18px;
+    border: 2px solid;
+    border-image: linear-gradient(45deg, #fabc40, #e25a28) 1;
+    background: #09090e;
+    @media (hover: hover) {
+        &:hover {
+            background: #302126;
+            color: $gold;
+        }
+    }
+}
+
+@media (hover: hover) {
+    .phone:hover, .coordinator a:hover {
+        color: #fff4df;
+        text-decoration-thickness: 2px;
+    }
+
+    header nav .logo:hover .brand-name { color: $gold; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .website-action a, .cta-inner a, .phone, .coordinator a, .brand-name {
+        transition: color .15s ease, background-color .15s ease;
+    }
+}
+
+.coordinator { margin-top: 18px; }
+.cta-inner {
+    padding: 30px 16px;
+    background: linear-gradient(#020408b8, #020408cc), url('../images/hero.jpg') center/cover;
+}
+.cta-inner h2 { margin-bottom: 14px; font-size: 40px; }
+
+header nav .logo .brand-name {
+    font: 400 32px/1 Tangerine, cursive;
+}
+a:focus-visible, button:focus-visible {
+    outline: 3px solid $gold;
+    outline-offset: 2px;
+}
+@media (max-width: 960px) {
+    .businesses { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 768px) {
+    header nav .links:not(.active) { visibility: hidden; }
+    header nav .links.active ul li a { display: inline-flex; }
+    header nav .hamburger { width: 44px; height: 44px; padding: 12px 9px; }
+}
+@media (max-width: 600px) {
+    .businesses { grid-template-columns: minmax(0, 1fr); }
+    .directory { padding-top: 96px; }
+    header nav .logo .brand-name { font-size: 28px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    *, *:hover { transition-duration: 0s !important; }
+}

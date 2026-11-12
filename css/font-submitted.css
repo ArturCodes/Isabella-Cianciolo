@@ -38,23 +38,27 @@
     margin: 0;
     caret-color: transparent;
   }
+
   html {
     background-color: #020408;
     height: 100%;
     width: 100%;
     -webkit-text-size-adjust: 100%;
   }
+
   body {
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
   }
+
   html,
-  body {
+body {
     height: 100%;
     margin: 0 auto;
     overflow-x: hidden;
   }
+
   .scroll-wrapper {
     height: 100dvh;
     margin: 0 auto;
@@ -86,6 +90,7 @@ html h1 {
     background: transparent;
     z-index: 20;
   }
+
   #overlay.active {
     display: block;
   }
@@ -156,6 +161,8 @@ html h1 {
     width: 80px;
     height: 80px;
   }
+}
+@media only screen and (min-width: 0px) {
   header nav .logo img {
     width: 75px;
     margin-right: 5px;
@@ -226,6 +233,8 @@ html h1 {
     -webkit-text-fill-color: transparent;
     transition: 0.3s;
   }
+}
+@media only screen and (min-width: 0px) {
   header nav .links ul .selected {
     transition: 0.3s;
     color: #F8AD3E;
@@ -235,6 +244,8 @@ html h1 {
     -webkit-text-fill-color: transparent;
     transition: 0.3s;
   }
+}
+@media only screen and (min-width: 0px) {
   header nav .links.active {
     display: flex;
     flex-direction: column;
@@ -249,8 +260,7 @@ html h1 {
     transition: right 0.4s;
     z-index: 25;
     border-left: 2px solid;
-    -o-border-image: linear-gradient(45deg, #FABC40, #e25a28) 1;
-       border-image: linear-gradient(45deg, #FABC40, #e25a28) 1;
+    border-image: linear-gradient(45deg, #FABC40, #e25a28) 1;
   }
 }
 @media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 768px) {
@@ -287,6 +297,7 @@ html h1 {
     background: linear-gradient(45deg, #FABC40, #e25a28);
     border-radius: 3px;
     transition: all 0.2s ease;
+    -webkit-transform: translateZ(0);
     transform: translateZ(0);
   }
 }
@@ -327,38 +338,38 @@ html h1 {
     transform: rotate(-45deg) translate(7.25px, -5px);
   }
 }
-@media only screen and (min-width: 0px) {
-  .footer-inner {
-    text-align: center;
-    padding: 15px 0 15px;
-    margin: 0 auto;
-    font-size: 13px;
-    color: white;
-    text-shadow: 0px 0px 3px black;
-    line-height: 1.5;
-    transition: 0.3s;
-  }
-  .footer-inner:hover {
-    transition: 0.3s;
-    color: white;
-  }
-  .footer-inner:hover a {
-    transition: 0.3s;
-    color: #FDCD6E;
-    transition: 0.3s;
-    color: #F8AD3E;
-    background: linear-gradient(45deg, #FABC40, #e25a28);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: 0.3s;
-  }
-  .footer-inner a {
-    text-shadow: none;
-    transition: 0.3s;
-    color: white;
+.footer-inner {
+  text-align: center;
+  padding: 15px 0;
+  margin: 0 auto;
+  font-size: 13px;
+  color: white;
+  text-shadow: 0 0 3px black;
+  line-height: 1.5;
+}
+.footer-inner a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  text-shadow: none;
+  color: white;
+}
+@media (hover: hover) {
+  .footer-inner a:hover {
+    color: #fdcd6e;
+    text-decoration: underline;
   }
 }
+@media (prefers-reduced-motion: no-preference) {
+  .footer-inner a {
+    transition: color 0.15s ease;
+  }
+}
+.footer-inner a:focus-visible {
+  outline: 2px solid #fdcd6e;
+  outline-offset: 2px;
+}
+
 @media only screen and (min-width: 0px) {
   body {
     background-image: url(../images/hero.jpg);
@@ -473,7 +484,7 @@ html h1 {
     display: none;
   }
   .form-submitted .form-submitted-inner img,
-  .form-submitted .form-submitted-inner .info {
+.form-submitted .form-submitted-inner .info {
     display: none;
   }
 }
@@ -489,7 +500,7 @@ html h1 {
     font-size: 30px;
   }
   .form-submitted .form-submitted-inner h1,
-  .form-submitted .form-submitted-inner p {
+.form-submitted .form-submitted-inner p {
     text-align: left;
   }
 }
@@ -534,4 +545,6 @@ html h1 {
   .buffer3 {
     display: block;
   }
-}/*# sourceMappingURL=font-submitted.css.map */
+}
+
+/*# sourceMappingURL=font-submitted.css.map */

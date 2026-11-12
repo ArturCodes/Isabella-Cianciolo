@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Businesses</title>
+    <meta name="description" content="Explore local businesses offering professional services throughout the Twin Cities.">
+    <link rel="canonical" href="https://isabella-cianciolo.netlify.app/partners">
+    <meta property="og:url" content="https://isabella-cianciolo.netlify.app/partners">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Local Businesses">
+    <meta property="og:description" content="Explore local businesses offering professional services throughout the Twin Cities.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content=" Astrology " />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+
+    <link rel="stylesheet" href="css/partners.css">
+</head>
+
+<body>
+    <div class="scroll-wrapper">
+
+        <header>
+            <nav>
+                <div id="overlay" onclick="closeMobile()" class="" aria-hidden="true"></div>
+                <a href="./index.html" class="logo">
+                    <div class="img">
+                        <img src="./images/logo.png" alt="">
+                    </div>
+                    <span class="brand-name">Astrology For Mindfulness</span>
+                </a>
+
+                <button class="hamburger" aria-label="Menu" aria-controls="site-links" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="links" id="site-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+            <script>
+                const hamburger = document.querySelector(".hamburger");
+                const links = document.querySelector(".links");
+                const overlay = document.getElementById("overlay");
+
+                // Function to open/close mobile menu
+                hamburger.addEventListener("click", () => {
+                    const isActive = hamburger.classList.toggle("active");
+                    links.classList.toggle("active");
+                    hamburger.setAttribute("aria-expanded", String(isActive));
+                    overlay.classList.toggle("active", isActive); // show overlay only if menu is active
+                });
+
+                // Function to close mobile menu
+                function closeMobile() {
+                    hamburger.classList.remove("active");
+                    links.classList.remove("active");
+                    hamburger.setAttribute("aria-expanded", "false");
+                    overlay.classList.remove("active");
+                }
+
+                // Optional: close menu if clicking outside on mobile
+                document.addEventListener("click", (e) => {
+                    if (
+                        !hamburger.contains(e.target) &&
+                        !links.contains(e.target) &&
+                        window.innerWidth <= 768
+                    ) {
+                        closeMobile();
+                    }
+                });
+            </script>
+        </header>
+
+        <main>
+            <section class="directory">
+                <h1>Local Businesses</h1>
+                <p class="intro">Explore local businesses offering professional services throughout the Twin Cities.</p>
+                <div class="businesses">
+                    <article data-email="shapiro.mpls@gmail.com">
+                        <p class="category">Tax &amp; Accounting</p>
+                        <h2>Nikol Shapiro CPA</h2>
+                        <p>Tax preparation, planning, bookkeeping, payroll, and business advisory services for individuals and businesses.</p>
+                        <p class="location">Plymouth, Minnesota</p>
+                        <a class="phone" href="tel:+17632733524">(763) 273-3524</a>
+                        <div class="website-action"><a href="https://cpaservices.netlify.app/" aria-label="Visit Website for Nikol Shapiro CPA">Visit Website</a></div>
+                    </article>
+                    <article data-email="info@brewerbuiltllc.com">
+                        <p class="category">Decks &amp; Remodeling</p>
+                        <h2>Brewer Built LLC</h2>
+                        <p>Custom decks, porches, railings, and outdoor living spaces, plus select kitchen and bathroom remodeling projects.</p>
+                        <p class="location">Minnetonka and the southwest Twin Cities</p>
+                        <a class="phone" href="tel:+16122572210">(612) 257-2210</a>
+                        <div class="website-action"><a href="https://www.brewerbuiltllc.com/" aria-label="Visit Website for Brewer Built LLC">Visit Website</a></div>
+                    </article>
+                    <article data-email="wajoko.therapy@gmail.com">
+                        <p class="category">Perinatal Mental Health</p>
+                        <h2>Wajoko Therapy</h2>
+                        <p>In-home and telehealth therapy for pregnancy, postpartum, and early parenthood, with childcare during in-home sessions.</p>
+                        <p class="location">Northwest Twin Cities metro</p>
+                        <a class="phone" href="tel:+17636474100">(763) 647-4100</a>
+                        <div class="website-action"><a href="https://wajokotherapy.com/" aria-label="Visit Website for Wajoko Therapy">Visit Website</a></div>
+                    </article>
+                    <article data-email="BeautybySheritee@gmail.com">
+                        <p class="category">Makeup &amp; Hair Braiding</p>
+                        <h2>Beauty by Sheri</h2>
+                        <p>Professional makeup, hair braiding, and bridal beauty services for weddings, events, and everyday occasions.</p>
+                        <p class="location">Saint Paul and the Twin Cities · By appointment</p>
+                        <div class="website-action"><a href="https://beautybysheri.com/" aria-label="Visit Website for Beauty by Sheri">Visit Website</a></div>
+                    </article>
+                    <article data-email="AmazivPainting@gmail.com">
+                        <p class="category">Interior Painting</p>
+                        <h2>Amaziv Painting</h2>
+                        <p>Interior painting for walls, ceilings, trim, and doors, along with wallpaper installation for Twin Cities homes.</p>
+                        <p class="location">Minneapolis, Saint Paul, and surrounding communities</p>
+                        <a class="phone" href="tel:+14692748019">(469) 274-8019</a>
+                        <div class="website-action"><a href="https://amazivpainting.com/" aria-label="Visit Website for Amaziv Painting">Visit Website</a></div>
+                    </article>
+                    <article>
+                        <p class="category">Massage &amp; Wellness</p>
+                        <h2>Massage Healing Therapy Spa Services</h2>
+                        <p>Personalized massage sessions, including Swedish, deep tissue, hot stone, couples, and prenatal massage.</p>
+                        <p class="location">3801 W 50th St #250c, Minneapolis, MN 55410 (second floor)</p>
+                        <a class="phone" href="tel:+16126696016">(612) 669-6016 — text preferred</a>
+                        <div class="website-action"><a href="https://massagehealingtherapymn.com/" aria-label="Visit Website for Massage Healing Therapy Spa Services">Visit Website</a></div>
+                    </article>
+                    <article data-email="aaronmetzgerart@gmail.com">
+                        <p class="category">Visual Art</p>
+                        <h2>Aaron Metzger Art</h2>
+                        <p>Original paintings, three-dimensional work, and ephemera exploring humor through vivid color and satirical scenes.</p>
+                        <div class="website-action"><a href="https://aaronmetzgerart.com/" aria-label="Visit Website for Aaron Metzger Art">Visit Website</a></div>
+                    </article>
+                    <article data-email="tk@WayzataStudios.com">
+                        <p class="category">Music Education</p>
+                        <h2>Wayzata Music School</h2>
+                        <p>Individual and group music instruction with Thomas K. Just, incorporating music history, literacy, and technology.</p>
+                        <p class="location">15195 Wayzata Boulevard, Minnetonka, MN 55391</p>
+                        <a class="phone" href="tel:+19529056120">(952) 905-6120</a>
+                        <div class="website-action"><a href="https://wayzatastudios.com/" aria-label="Visit Website for Wayzata Music School">Visit Website</a></div>
+                    </article>
+                </div>
+                <p class="coordinator">Directory coordinated by <a href="https://artshawebdesign.com/">ARTSHA Web Design</a>.</p>
+            </section>
+            <section id="cta">
+                <div class="cta-inner">
+                    <h2>Understand Your Unique Cosmic Signature</h2>
+                    <div class="button">
+                        <a href="services.html">Start Your Journey </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-inner">
+                Copyright © 2026 - Isabella Cianciolo - All Rights Reserved
+                <br><a href="https://artshawebdesign.com/"> ARTSHA Web Design & Development </a> | <a href="partners.html">Local Businesses</a>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>

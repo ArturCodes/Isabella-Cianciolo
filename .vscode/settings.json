@@ -2,5 +2,9 @@
   "macros": {
     "foldAllAndThenFoldLevel4": ["editor.unfoldAll", "editor.foldLevel4"]
   },
-  "cSpell.words": ["birthchart", "speculationrules"]
+  "cSpell.words": [
+    "birthchart",
+    "speculationrules"
+  ],
+  "liveServer.settings.port": 5501
 }

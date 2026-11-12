@@ -39,23 +39,27 @@
     margin: 0;
     caret-color: transparent;
   }
+
   html {
     background-color: #020408;
     height: 100%;
     width: 100%;
     -webkit-text-size-adjust: 100%;
   }
+
   body {
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
   }
+
   html,
-  body {
+body {
     height: 100%;
     margin: 0 auto;
     overflow-x: hidden;
   }
+
   .scroll-wrapper {
     height: 100dvh;
     margin: 0 auto;
@@ -87,6 +91,7 @@ html h1 {
     background: transparent;
     z-index: 20;
   }
+
   #overlay.active {
     display: block;
   }
@@ -157,6 +162,8 @@ html h1 {
     width: 80px;
     height: 80px;
   }
+}
+@media only screen and (min-width: 0px) {
   header nav .logo img {
     width: 75px;
     margin-right: 5px;
@@ -227,6 +234,8 @@ html h1 {
     -webkit-text-fill-color: transparent;
     transition: 0.3s;
   }
+}
+@media only screen and (min-width: 0px) {
   header nav .links ul .selected {
     transition: 0.3s;
     color: #F8AD3E;
@@ -236,6 +245,8 @@ html h1 {
     -webkit-text-fill-color: transparent;
     transition: 0.3s;
   }
+}
+@media only screen and (min-width: 0px) {
   header nav .links.active {
     display: flex;
     flex-direction: column;
@@ -250,8 +261,7 @@ html h1 {
     transition: right 0.4s;
     z-index: 25;
     border-left: 2px solid;
-    -o-border-image: linear-gradient(45deg, #FABC40, #e25a28) 1;
-       border-image: linear-gradient(45deg, #FABC40, #e25a28) 1;
+    border-image: linear-gradient(45deg, #FABC40, #e25a28) 1;
   }
 }
 @media only screen and (min-width: 0px) and (min-width: 0px) and (max-width: 768px) {
@@ -288,6 +298,7 @@ html h1 {
     background: linear-gradient(45deg, #FABC40, #e25a28);
     border-radius: 3px;
     transition: all 0.2s ease;
+    -webkit-transform: translateZ(0);
     transform: translateZ(0);
   }
 }
@@ -328,38 +339,38 @@ html h1 {
     transform: rotate(-45deg) translate(7.25px, -5px);
   }
 }
-@media only screen and (min-width: 0px) {
-  .footer-inner {
-    text-align: center;
-    padding: 15px 0 15px;
-    margin: 0 auto;
-    font-size: 13px;
-    color: white;
-    text-shadow: 0px 0px 3px black;
-    line-height: 1.5;
-    transition: 0.3s;
-  }
-  .footer-inner:hover {
-    transition: 0.3s;
-    color: white;
-  }
-  .footer-inner:hover a {
-    transition: 0.3s;
-    color: #FDCD6E;
-    transition: 0.3s;
-    color: #F8AD3E;
-    background: linear-gradient(45deg, #FABC40, #e25a28);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: 0.3s;
-  }
-  .footer-inner a {
-    text-shadow: none;
-    transition: 0.3s;
-    color: white;
+.footer-inner {
+  text-align: center;
+  padding: 15px 0;
+  margin: 0 auto;
+  font-size: 13px;
+  color: white;
+  text-shadow: 0 0 3px black;
+  line-height: 1.5;
+}
+.footer-inner a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  text-shadow: none;
+  color: white;
+}
+@media (hover: hover) {
+  .footer-inner a:hover {
+    color: #fdcd6e;
+    text-decoration: underline;
   }
 }
+@media (prefers-reduced-motion: no-preference) {
+  .footer-inner a {
+    transition: color 0.15s ease;
+  }
+}
+.footer-inner a:focus-visible {
+  outline: 2px solid #fdcd6e;
+  outline-offset: 2px;
+}
+
 @media only screen and (min-width: 0px) {
   body {
     background-image: url(../images/hero.jpg);
@@ -476,7 +487,7 @@ html h1 {
     display: none;
   }
   .contact .contact-inner img,
-  .contact .contact-inner .info {
+.contact .contact-inner .info {
     display: none;
   }
 }
@@ -492,7 +503,7 @@ html h1 {
     font-size: 30px;
   }
   .contact .contact-inner h1,
-  .contact .contact-inner p {
+.contact .contact-inner p {
     text-align: left;
   }
 }
@@ -522,16 +533,17 @@ html h1 {
     margin-bottom: 15px;
   }
   .form-info input[type=text],
-  .form-info textarea {
+.form-info textarea {
     padding: 8px 12px;
     outline: none;
     transition: border-color 0.3s ease;
     font-family: sans-serif;
   }
   .form-info input[type=text]:focus,
-  .form-info textarea:focus {
+.form-info textarea:focus {
     border-color: 1px solid #F8AD3E !important;
   }
+
   .selection .service-selection fieldset {
     display: flex;
     flex-direction: column;
@@ -550,7 +562,6 @@ html h1 {
     font-size: 16px;
     padding: 0 10px;
     text-align: center;
-    width: -moz-fit-content;
     width: fit-content;
   }
   .selection .service-selection fieldset label {
@@ -583,8 +594,8 @@ html h1 {
     border: 1px solid #707070;
   }
   .selection .service-selection fieldset label input[type=checkbox]:checked {
-    border: 1px solid rgb(118, 118, 118);
-    background: linear-gradient(45deg, rgba(250, 188, 64, 0.737254902), rgba(226, 90, 40, 0.7137254902));
+    border: 1px solid #767676;
+    background: linear-gradient(45deg, #fabc40bc, #e25a28b6);
     border-color: #FABC40;
   }
   .selection .service-selection fieldset label input[type=checkbox]:checked::after {
@@ -614,11 +625,11 @@ html h1 {
   .button-box {
     background-color: rgba(4, 4, 4, 0.5);
     border: 2px solid;
-    -o-border-image: linear-gradient(45deg, #FABC40, #e25a28) 1;
-       border-image: linear-gradient(45deg, #FABC40, #e25a28) 1;
-    width: -moz-fit-content;
+    border-image: linear-gradient(45deg, #FABC40, #e25a28) 1;
     width: fit-content;
   }
+}
+@media only screen and (min-width: 0px) {
   .button {
     font-family: "Sumana";
     background-color: black;
@@ -637,48 +648,57 @@ html h1 {
     transition: 0.2s;
     background-color: rgba(4, 4, 4, 0.5);
     border: 1px solid;
-    -o-border-image: linear-gradient(45deg, #FABC40, #e25a28) 1;
-       border-image: linear-gradient(45deg, #FABC40, #e25a28) 1;
+    border-image: linear-gradient(45deg, #FABC40, #e25a28) 1;
   }
   .button:hover {
     transition: 0.2s;
     box-shadow: 0px 0px 35px #d36b83;
   }
+}
+@media only screen and (min-width: 0px) {
   input:-webkit-autofill,
-  input:-webkit-autofill:hover,
-  input:-webkit-autofill:focus,
-  input:-webkit-autofill:active {
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
     -webkit-text-fill-color: white !important;
     box-shadow: 0 0 0px 1000px black inset;
     background: rgba(4, 4, 4, 0.5);
   }
+}
+@media only screen and (min-width: 0px) {
   input,
-  textarea {
+textarea {
     border: 1px solid #707070;
     transition: border-color 0.1s, box-shadow 0.1s;
     caret-color: #F8AD3E;
   }
+}
+@media only screen and (min-width: 0px) {
   input:focus,
-  textarea:focus,
-  fieldset:focus {
+textarea:focus,
+fieldset:focus {
     outline: none;
     border-color: #F8AD3E;
   }
+}
+@media only screen and (min-width: 0px) {
   input,
-  textarea,
-  select,
-  fieldset {
+textarea,
+select,
+fieldset {
     font-size: 16px;
     border: #707070 1px solid;
     font-family: sans-serif !important;
   }
   input:hover,
-  textarea:hover,
-  select:hover,
-  fieldset:hover {
+textarea:hover,
+select:hover,
+fieldset:hover {
     outline: none;
     border: #F8AD3E 1px solid !important;
   }
+}
+@media only screen and (min-width: 0px) {
   fieldset::before {
     content: "";
     position: absolute;
@@ -729,4 +749,6 @@ html h1 {
   .buffer3 {
     display: block;
   }
-}/*# sourceMappingURL=contact.css.map */
+}
+
+/*# sourceMappingURL=contact.css.map */
